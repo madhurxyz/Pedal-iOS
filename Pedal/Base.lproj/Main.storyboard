@@ -512,12 +512,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5e-9a-9BU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5e-9a-9BU">
                                 <rect key="frame" x="31" y="589" width="313" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="cWk-wN-KCK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -529,14 +527,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Z5e-9a-9BU" secondAttribute="trailing" constant="15" id="96d-Jy-OcA"/>
                             <constraint firstItem="RZp-3m-1oJ" firstAttribute="top" secondItem="QHx-UI-hew" secondAttribute="bottom" constant="18" id="Odb-As-MH8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RZp-3m-1oJ" secondAttribute="trailing" constant="38" id="S1l-4z-u86"/>
                             <constraint firstItem="QHx-UI-hew" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="bottom" constant="33" id="UZV-jQ-3FW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t9i-WT-BD8" secondAttribute="trailing" constant="38" id="UZX-dN-uPw"/>
-                            <constraint firstItem="Z5e-9a-9BU" firstAttribute="leading" secondItem="wFE-tN-k3n" secondAttribute="leadingMargin" constant="15" id="XOe-r8-F2Y"/>
                             <constraint firstItem="RZp-3m-1oJ" firstAttribute="leading" secondItem="wFE-tN-k3n" secondAttribute="leadingMargin" constant="38" id="aoz-TG-Ftv"/>
-                            <constraint firstItem="4n9-hm-BwL" firstAttribute="top" secondItem="Z5e-9a-9BU" secondAttribute="bottom" constant="20" id="lZX-4f-rnc"/>
                             <constraint firstItem="GXe-ew-V6p" firstAttribute="top" secondItem="wFE-tN-k3n" secondAttribute="top" id="mM5-DR-LrX"/>
                             <constraint firstItem="t9i-WT-BD8" firstAttribute="leading" secondItem="wFE-tN-k3n" secondAttribute="leadingMargin" constant="38" id="nKl-rw-oNG"/>
                             <constraint firstItem="t9i-WT-BD8" firstAttribute="top" secondItem="RZp-3m-1oJ" secondAttribute="bottom" constant="18" id="p6w-iu-Ddh"/>
