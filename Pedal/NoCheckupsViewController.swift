@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class NoCheckupsViewController: UIViewController {
 
@@ -17,7 +18,9 @@ class NoCheckupsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let realm = try! Realm()
+        let memory = realm.objects(Patient.self)
+        self.patient = memory[0]
         
         nameLabel.text! = "Hi \(self.patient!.name),"
         // Do any additional setup after loading the view.
