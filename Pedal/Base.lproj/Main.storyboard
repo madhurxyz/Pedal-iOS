@@ -622,8 +622,8 @@
         <image name="rightFoot.png" width="384" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aIz-Qh-mZw"/>
         <segue reference="rzv-A1-qEe"/>
-        <segue reference="rmR-XH-UtQ"/>
         <segue reference="Ee1-ov-mza"/>
     </inferredMetricsTieBreakers>
 </document>
