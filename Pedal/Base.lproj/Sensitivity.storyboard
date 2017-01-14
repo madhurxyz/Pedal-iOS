@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +19,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zpw-Hp-t2Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lST-6V-pnj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yML-fK-Mww">
@@ -99,7 +103,6 @@
                             <constraint firstItem="o4y-gq-WDr" firstAttribute="leading" secondItem="cy1-Bc-R32" secondAttribute="leading" id="zhr-NM-LzA"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <connections>
                         <outlet property="instructionsTitleLabel" destination="IAv-Tl-Do0" id="eCu-7h-QXb"/>
                     </connections>
@@ -266,9 +269,12 @@
                                     <action selector="eraseButton:" destination="bXL-G3-2gA" eventType="touchUpInside" id="GNE-ix-LX0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Low Sensitivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn2-KD-JdR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Sensitivity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wn2-KD-JdR">
                                 <rect key="frame" x="73" y="28" width="228" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1a7-RL-6Yg"/>
+                                    <constraint firstAttribute="width" constant="228" id="bf9-Cs-6u4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="33"/>
                                 <color key="textColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.79315226510067116" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -282,6 +288,8 @@
                             <constraint firstItem="HwW-wr-FSd" firstAttribute="top" secondItem="7fv-wf-gR0" secondAttribute="bottom" constant="113" id="TbP-gz-Hm6"/>
                             <constraint firstItem="0cd-8y-68J" firstAttribute="leading" secondItem="v5K-eC-G0F" secondAttribute="leadingMargin" id="WBi-a2-IVw"/>
                             <constraint firstItem="HwW-wr-FSd" firstAttribute="leading" secondItem="v5K-eC-G0F" secondAttribute="leading" id="aqd-rP-ags"/>
+                            <constraint firstItem="wn2-KD-JdR" firstAttribute="top" secondItem="7fv-wf-gR0" secondAttribute="bottom" constant="8" id="eSR-LQ-Wpw"/>
+                            <constraint firstItem="wn2-KD-JdR" firstAttribute="centerX" secondItem="v5K-eC-G0F" secondAttribute="centerX" id="etw-bK-aY4"/>
                             <constraint firstItem="tkY-fE-cNQ" firstAttribute="trailing" secondItem="v5K-eC-G0F" secondAttribute="trailingMargin" id="fV2-ZJ-w9U"/>
                             <constraint firstItem="MDT-f9-6ZP" firstAttribute="top" secondItem="HwW-wr-FSd" secondAttribute="bottom" constant="134" id="oRi-Cg-8ku"/>
                             <constraint firstItem="tkY-fE-cNQ" firstAttribute="top" secondItem="HwW-wr-FSd" secondAttribute="bottom" constant="67" id="r6I-5k-5fT"/>
