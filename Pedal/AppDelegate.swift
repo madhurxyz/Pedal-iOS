@@ -24,7 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "NewPatientViewController")
             self.window?.rootViewController = initialViewController
-        } else if patients[0].checkups.count < 1 {
+        }
+        
+        
+        else if patients[0].checkups.count < 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "NoCheckupsViewController")
             self.window?.rootViewController = initialViewController

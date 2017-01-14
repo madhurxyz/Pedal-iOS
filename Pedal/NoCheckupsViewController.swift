@@ -17,6 +17,8 @@ class NoCheckupsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         nameLabel.text! = "Hi \(self.patient!.name),"
         // Do any additional setup after loading the view.
         nameLabel.adjustsFontSizeToFitWidth = true
