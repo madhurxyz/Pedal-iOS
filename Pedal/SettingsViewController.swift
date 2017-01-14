@@ -85,7 +85,7 @@ class SettingsViewController: UIViewController {
                         patient.email = emailTextField.text!
                         patient.doctorEmail = doctorEmailTextField.text ?? ""
                     }
-                    tempWelcomeScreen.nameLabel.text! = patient.name
+                    tempWelcomeScreen.nameLabel.text! = "Hi \(patient.name),"
                 }
             }
         
