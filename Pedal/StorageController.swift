@@ -78,6 +78,9 @@ class StorageController: UINavigationController {
         return checkup
         
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     

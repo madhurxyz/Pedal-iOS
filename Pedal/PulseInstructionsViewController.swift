@@ -30,5 +30,4 @@ class PulseInstructionsViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
 }
