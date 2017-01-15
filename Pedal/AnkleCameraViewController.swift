@@ -81,5 +81,8 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
             storage!.rightAnkleImage = self.ankleImageView.image!.toData()!
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }

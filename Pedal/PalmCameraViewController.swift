@@ -85,5 +85,8 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
             storage!.rightPalmImage = self.palmImageView.image!.toData()!
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }

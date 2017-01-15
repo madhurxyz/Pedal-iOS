@@ -44,4 +44,7 @@ class PulseQ2ViewController: UIViewController {
             storage!.rightBeats = self.sliderValue
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

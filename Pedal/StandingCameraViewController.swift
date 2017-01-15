@@ -76,4 +76,7 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
             storage!.rightStandingImage = self.standingImageView.image!.toData()!
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

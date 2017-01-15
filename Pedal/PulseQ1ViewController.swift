@@ -59,4 +59,7 @@ class PulseQ1ViewController: UIViewController {
             storage!.rightFelt = self.felt
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
