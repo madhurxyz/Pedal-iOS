@@ -54,7 +54,7 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
             self.changeDataButton.setTitle("Sorty by Date", for: .normal)
         }
         else{
-            self.changeDataButton.setTitle("Sorty by Category", for: .normal)
+            self.changeDataButton.setTitle("Sort by Category", for: .normal)
         }
         self.sortByDate = !self.sortByDate
         tableView.reloadData()
