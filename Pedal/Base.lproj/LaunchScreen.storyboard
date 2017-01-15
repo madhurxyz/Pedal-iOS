@@ -22,17 +22,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PedalLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="OC3-JK-rjp">
-                                <rect key="frame" x="139" y="264" width="75" height="139"/>
+                                <rect key="frame" x="128" y="250" width="90" height="166"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="139" id="MQ1-Ct-6Ft"/>
-                                    <constraint firstAttribute="width" constant="75" id="fO1-Lj-kMF"/>
+                                    <constraint firstAttribute="height" constant="166" id="MQ1-Ct-6Ft"/>
+                                    <constraint firstAttribute="width" constant="90" id="fO1-Lj-kMF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cyan="0.0" magenta="0.80249999999999999" yellow="0.60209999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
                             <constraint firstItem="OC3-JK-rjp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="U3r-ia-bpY"/>
-                            <constraint firstItem="OC3-JK-rjp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-11" id="tlT-vC-K7a"/>
+                            <constraint firstItem="OC3-JK-rjp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-14.5" id="tlT-vC-K7a"/>
                         </constraints>
                     </view>
                 </viewController>

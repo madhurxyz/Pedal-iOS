@@ -347,7 +347,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftFoot.png" translatesAutoresizingMaskIntoConstraints="NO" id="cQX-40-FJT">
-                                <rect key="frame" x="153" y="205" width="91" height="169"/>
+                                <rect key="frame" x="148" y="205" width="91" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="6FW-iP-moJ"/>
                                     <constraint firstAttribute="width" constant="91" id="cXz-LV-jyu"/>
@@ -358,7 +358,7 @@
                         <constraints>
                             <constraint firstItem="aDk-cB-3eE" firstAttribute="top" secondItem="uwE-yL-EVm" secondAttribute="bottom" constant="48" id="0iM-aD-wnx"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="leading" secondItem="Rms-WH-upo" secondAttribute="leading" id="JXO-nf-8u1"/>
-                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" constant="11" id="QN0-0P-gn8"/>
+                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" constant="6" id="QN0-0P-gn8"/>
                             <constraint firstItem="cQX-40-FJT" firstAttribute="centerY" secondItem="cc7-Wc-Tw2" secondAttribute="centerY" constant="-12" id="S8g-EW-SpG"/>
                             <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="16" id="Wps-kt-pr4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rms-WH-upo" secondAttribute="trailing" constant="24" id="aIN-vS-zXI"/>
