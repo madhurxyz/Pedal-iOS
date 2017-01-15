@@ -90,14 +90,14 @@ extension SeeCheckupCollectionViewController: UICollectionViewDelegate, UICollec
             
             pulseView.beatsLabel.text = String(selectedFoot!.pulse!.beats)
             pulseView.stengthLabel.text = String(selectedFoot!.pulse!.strength)
-            pulseView.beatsBar.setValue(Float(selectedFoot!.pulse!.beats), animated: false)
-            pulseView.beatsBar.isEnabled = false
-        
-            pulseView.strengthBar.setValue(Float(selectedFoot!.pulse!.strength), animated: false)
+//            pulseView.beatsBar.setValue(Float(selectedFoot!.pulse!.beats), animated: false)
+//            pulseView.beatsBar.isEnabled = false
+//        
+//            pulseView.strengthBar.setValue(Float(selectedFoot!.pulse!.strength), animated: false)
             
-            pulseView.strengthBar.isEnabled = false
+//            pulseView.strengthBar.isEnabled = false
             pulseView.frame.size = cell.frame.size
-            pulseView.feltPulseLabel.text = "Pulse?"
+//            pulseView.feltPulseLabel.text = "Pulse?"
             
             if selectedFoot!.pulse!.felt{
                 pulseView.feltPulseImage.image = #imageLiteral(resourceName: "checkmark-for-verification")

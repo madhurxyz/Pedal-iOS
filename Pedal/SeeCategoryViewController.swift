@@ -15,6 +15,7 @@ class SeeCategoryViewController: UIViewController {
     var rightData: [(image: UIImage,image2: UIImage?, date: Date)] = []
     let dateFormatter = DateFormatter()
 
+    var lastIndex = 0
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -56,12 +57,18 @@ class SeeCategoryViewController: UIViewController {
 
 extension SeeCategoryViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return leftData.count
+        if selectedCategory! == .sensitivity{
+            return leftData.count * 2
+        }
+        
+        else{
+            return leftData.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "category", for: indexPath) as! CategoryCollectionViewCell
-        let row = indexPath.row
+        var row = indexPath.row
         
         let leftSelected = segmentedControl.selectedSegmentIndex == 0
         let date = leftData[row].date
@@ -69,7 +76,7 @@ extension SeeCategoryViewController: UICollectionViewDelegate, UICollectionViewD
         
         switch selectedCategory!{
         
-        case .ankle, .palm, .sensitivity:
+        case .ankle, .palm, .standing:
             if leftSelected{
                 cell.imageForCell.image = leftData[row].image
             }
@@ -78,7 +85,9 @@ extension SeeCategoryViewController: UICollectionViewDelegate, UICollectionViewD
             }
         
         case .sensitivity:
-            if row % 2 == 0{
+
+            if row % 2 == 0 {
+                self.lastIndex = row
                 if leftSelected{
                     cell.imageForCell.image = leftData[row].image
             }
@@ -87,7 +96,7 @@ extension SeeCategoryViewController: UICollectionViewDelegate, UICollectionViewD
                 }
         }
             
-            else{
+            else {
                 if leftSelected{
                     cell.imageForCell.image = leftData[row].image2
                 }
@@ -103,6 +112,7 @@ extension SeeCategoryViewController: UICollectionViewDelegate, UICollectionViewD
       
         return cell
     }
+    
     
     
 }
