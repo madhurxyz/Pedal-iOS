@@ -389,13 +389,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightFoot.png" translatesAutoresizingMaskIntoConstraints="NO" id="04i-7d-PKh">
-                                <rect key="frame" x="122" y="196" width="131" height="242"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="aJu-Kl-lLx"/>
-                                    <constraint firstAttribute="height" constant="242" id="j3u-os-Vyu"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPr-6v-urv">
                                 <rect key="frame" x="39" y="588" width="296" height="59"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -419,13 +412,20 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightFoot.png" translatesAutoresizingMaskIntoConstraints="NO" id="04i-7d-PKh">
+                                <rect key="frame" x="131" y="249" width="91" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="aJu-Kl-lLx"/>
+                                    <constraint firstAttribute="height" constant="169" id="j3u-os-Vyu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411760000005" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="04i-7d-PKh" firstAttribute="top" secondItem="5aJ-OC-Wob" secondAttribute="bottom" constant="46" id="2g5-1O-xfM"/>
+                            <constraint firstItem="04i-7d-PKh" firstAttribute="top" secondItem="5aJ-OC-Wob" secondAttribute="bottom" constant="99" id="2g5-1O-xfM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5aJ-OC-Wob" secondAttribute="trailing" constant="24" id="3yn-hF-66O"/>
                             <constraint firstItem="5aJ-OC-Wob" firstAttribute="top" secondItem="uLp-ir-TKl" secondAttribute="bottom" constant="16" id="8hB-XX-ZfB"/>
-                            <constraint firstItem="04i-7d-PKh" firstAttribute="centerX" secondItem="4k1-i7-435" secondAttribute="centerX" id="JO0-mb-Ai8"/>
+                            <constraint firstItem="04i-7d-PKh" firstAttribute="centerX" secondItem="4k1-i7-435" secondAttribute="centerX" constant="-11" id="JO0-mb-Ai8"/>
                             <constraint firstItem="DPr-6v-urv" firstAttribute="leading" secondItem="5aJ-OC-Wob" secondAttribute="leading" id="Vhr-r2-piW"/>
                             <constraint firstAttribute="bottom" secondItem="DPr-6v-urv" secondAttribute="bottom" constant="20" symbolic="YES" id="Y4y-GM-N79"/>
                             <constraint firstItem="DPr-6v-urv" firstAttribute="trailing" secondItem="5aJ-OC-Wob" secondAttribute="trailing" id="laE-no-PKr"/>
@@ -624,6 +624,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="aIz-Qh-mZw"/>
         <segue reference="rzv-A1-qEe"/>
-        <segue reference="dDD-2Z-0UO"/>
+        <segue reference="Ee1-ov-mza"/>
     </inferredMetricsTieBreakers>
 </document>
