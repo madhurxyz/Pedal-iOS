@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StorageController: UINavigationController {
+class StorageController: UINavigationController, UINavigationControllerDelegate, UINavigationBarDelegate {
     var didCheckLeft = false
     var didCheckRight = false
     
@@ -43,7 +43,8 @@ class StorageController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "Checkup"
+        self.delegate = self
+        navigationBar.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,6 +84,15 @@ class StorageController: UINavigationController {
         return .lightContent
     }
     
+
+    
+    func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
+        self.navigationBar.topItem?.title = "Checkup"
+        let backButton = UIBarButtonItem()
+        backButton.title = "Back"
+        self.navigationBar.topItem?.backBarButtonItem = backButton
+        return false
+    }
     
     
     
