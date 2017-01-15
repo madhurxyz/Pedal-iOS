@@ -34,4 +34,7 @@ class LeftFootViewController: UIViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
