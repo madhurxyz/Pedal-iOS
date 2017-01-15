@@ -347,10 +347,10 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftFoot.png" translatesAutoresizingMaskIntoConstraints="NO" id="cQX-40-FJT">
-                                <rect key="frame" x="122" y="181" width="131" height="242"/>
+                                <rect key="frame" x="153" y="205" width="91" height="169"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="242" id="6FW-iP-moJ"/>
-                                    <constraint firstAttribute="width" constant="131" id="cXz-LV-jyu"/>
+                                    <constraint firstAttribute="height" constant="169" id="6FW-iP-moJ"/>
+                                    <constraint firstAttribute="width" constant="91" id="cXz-LV-jyu"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -358,8 +358,8 @@
                         <constraints>
                             <constraint firstItem="aDk-cB-3eE" firstAttribute="top" secondItem="uwE-yL-EVm" secondAttribute="bottom" constant="48" id="0iM-aD-wnx"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="leading" secondItem="Rms-WH-upo" secondAttribute="leading" id="JXO-nf-8u1"/>
-                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" id="QN0-0P-gn8"/>
-                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerY" secondItem="cc7-Wc-Tw2" secondAttribute="centerY" id="S8g-EW-SpG"/>
+                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" constant="11" id="QN0-0P-gn8"/>
+                            <constraint firstItem="cQX-40-FJT" firstAttribute="centerY" secondItem="cc7-Wc-Tw2" secondAttribute="centerY" constant="-12" id="S8g-EW-SpG"/>
                             <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="16" id="Wps-kt-pr4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rms-WH-upo" secondAttribute="trailing" constant="24" id="aIN-vS-zXI"/>
                             <constraint firstItem="Rms-WH-upo" firstAttribute="leading" secondItem="cc7-Wc-Tw2" secondAttribute="leadingMargin" constant="23" id="gdl-Kj-c7I"/>
@@ -375,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrC-B3-Nul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="97"/>
+            <point key="canvasLocation" x="1816.8" y="96.7016491754123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BA1-Y3-8BD">
@@ -568,7 +568,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12J-Nh-1iT" customClass="StorageController" customModule="Pedal" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2Jy-jn-qMf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="2Jy-jn-qMf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -624,6 +624,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="aIz-Qh-mZw"/>
         <segue reference="rzv-A1-qEe"/>
-        <segue reference="Ee1-ov-mza"/>
+        <segue reference="dDD-2Z-0UO"/>
     </inferredMetricsTieBreakers>
 </document>

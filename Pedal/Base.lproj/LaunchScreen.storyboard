@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,16 +24,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PedalLogoWhite.png" translatesAutoresizingMaskIntoConstraints="NO" id="OC3-JK-rjp">
                                 <rect key="frame" x="139" y="264" width="75" height="139"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="0YU-vD-DoC"/>
-                                    <constraint firstAttribute="height" constant="139" id="xC7-JI-EZV"/>
+                                    <constraint firstAttribute="height" constant="139" id="MQ1-Ct-6Ft"/>
+                                    <constraint firstAttribute="width" constant="75" id="fO1-Lj-kMF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cyan="0.0" magenta="0.80249999999999999" yellow="0.60209999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="OC3-JK-rjp" secondAttribute="trailing" constant="145" id="CFQ-tA-pn4"/>
-                            <constraint firstItem="OC3-JK-rjp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="123" id="X3r-rG-kBQ"/>
-                            <constraint firstItem="OC3-JK-rjp" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="244" id="shY-fU-SLC"/>
+                            <constraint firstItem="OC3-JK-rjp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="U3r-ia-bpY"/>
+                            <constraint firstItem="OC3-JK-rjp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-11" id="tlT-vC-K7a"/>
                         </constraints>
                     </view>
                 </viewController>
