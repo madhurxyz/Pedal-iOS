@@ -304,7 +304,7 @@
                         <outlet property="scribbleView" destination="krc-db-21v" id="8I7-Em-Pns"/>
                         <segue destination="0yj-lb-Zdw" kind="show" identifier="right" id="GJS-Io-fGm"/>
                         <segue destination="ynK-LG-ipB" kind="unwind" identifier="unwind" unwindAction="unwindFromCheckupWithSegue:" id="6Yh-Ru-6AH"/>
-                        <segue destination="g3m-T5-Ke0" kind="show" identifier="mainWelcome" id="84W-Q7-uhy"/>
+                        <segue destination="g3m-T5-Ke0" kind="presentation" identifier="mainWelcome" id="84W-Q7-uhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0g-c8-eig" userLabel="First Responder" sceneMemberID="firstResponder"/>

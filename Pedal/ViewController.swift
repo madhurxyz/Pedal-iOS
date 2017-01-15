@@ -98,6 +98,10 @@ class ViewController: UIViewController {
             self.recommendationLabel.text! = ""
             self.recordsButton.isHidden = true
         }
+        
+        if let nav = self.navigationController {
+//            nav.dismiss(animated: false, completion: nil)
+        }
     }
     
     
