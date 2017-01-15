@@ -27,7 +27,7 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
         
-        if ankleImageView.image != nil{
+        if ankleImageView.image != #imageLiteral(resourceName: "yourImage"){
             performSegue(withIdentifier: "standing", sender: self)
         }
             

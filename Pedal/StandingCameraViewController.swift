@@ -24,7 +24,7 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
         }
     }
     @IBAction func standingButtonPressed(_ sender: Any) {
-        if standingImageView.image != nil{
+        if standingImageView.image != #imageLiteral(resourceName: "yourImage"){
             performSegue(withIdentifier: "sensitivity", sender: self)
         }
             
