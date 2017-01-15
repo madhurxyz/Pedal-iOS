@@ -328,15 +328,6 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's start with the Left foot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-WH-upo">
-                                <rect key="frame" x="39" y="46" width="296" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="Zsn-uj-O4l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwE-yL-EVm">
                                 <rect key="frame" x="39" y="496" width="296" height="59"/>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -369,6 +360,15 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's start with the Left foot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-WH-upo">
+                                <rect key="frame" x="39" y="27" width="296" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="Zsn-uj-O4l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -378,7 +378,7 @@
                             <constraint firstItem="IGg-7R-cfC" firstAttribute="leading" secondItem="cc7-Wc-Tw2" secondAttribute="leading" constant="8" id="PsI-Gf-VKj"/>
                             <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" constant="6" id="QN0-0P-gn8"/>
                             <constraint firstItem="cQX-40-FJT" firstAttribute="centerY" secondItem="cc7-Wc-Tw2" secondAttribute="centerY" constant="-12" id="S8g-EW-SpG"/>
-                            <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="46" id="Wps-kt-pr4"/>
+                            <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="27" id="Wps-kt-pr4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rms-WH-upo" secondAttribute="trailing" constant="24" id="aIN-vS-zXI"/>
                             <constraint firstItem="Rms-WH-upo" firstAttribute="leading" secondItem="cc7-Wc-Tw2" secondAttribute="leadingMargin" constant="23" id="gdl-Kj-c7I"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="trailing" secondItem="Rms-WH-upo" secondAttribute="trailing" id="god-YT-jQ7"/>
