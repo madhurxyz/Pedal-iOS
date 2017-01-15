@@ -113,6 +113,9 @@ class LowSenseViewController: UIViewController, SmoothViewDelegate {
             }
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }
 

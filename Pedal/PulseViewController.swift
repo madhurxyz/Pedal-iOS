@@ -52,5 +52,8 @@ class PulseViewController: UIViewController, LineChartDelegate {
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         lineChart.setNeedsDisplay()
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }

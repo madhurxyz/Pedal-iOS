@@ -76,5 +76,8 @@ class SensitivityViewController: UIViewController, SmoothViewDelegate {
             }
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }

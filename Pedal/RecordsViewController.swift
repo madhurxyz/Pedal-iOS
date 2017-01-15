@@ -200,5 +200,8 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
     
     return nil
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
 }
