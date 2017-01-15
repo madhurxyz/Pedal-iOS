@@ -584,7 +584,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12J-Nh-1iT" customClass="StorageController" customModule="Pedal" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="2Jy-jn-qMf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2Jy-jn-qMf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

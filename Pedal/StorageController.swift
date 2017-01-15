@@ -43,7 +43,7 @@ class StorageController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.title = "Checkup"
+        self.navigationController?.navigationBar.topItem?.title = "Checkup"
     }
     
     override func didReceiveMemoryWarning() {
