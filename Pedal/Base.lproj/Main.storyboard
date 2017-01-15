@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--New Patient View Controller-->
         <scene sceneID="0Ob-yY-rzT">
@@ -324,7 +329,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's start with the Left foot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-WH-upo">
-                                <rect key="frame" x="39" y="16" width="296" height="114"/>
+                                <rect key="frame" x="39" y="46" width="296" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="Zsn-uj-O4l"/>
                                 </constraints>
@@ -353,14 +358,27 @@
                                     <constraint firstAttribute="width" constant="91" id="cXz-LV-jyu"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGg-7R-cfC">
+                                <rect key="frame" x="8" y="8" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="elZ-yy-ba1"/>
+                                    <constraint firstAttribute="height" constant="30" id="rPE-3d-p7R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="21"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aDk-cB-3eE" firstAttribute="top" secondItem="uwE-yL-EVm" secondAttribute="bottom" constant="48" id="0iM-aD-wnx"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="leading" secondItem="Rms-WH-upo" secondAttribute="leading" id="JXO-nf-8u1"/>
+                            <constraint firstItem="IGg-7R-cfC" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="8" id="Kwa-kg-37I"/>
+                            <constraint firstItem="IGg-7R-cfC" firstAttribute="leading" secondItem="cc7-Wc-Tw2" secondAttribute="leading" constant="8" id="PsI-Gf-VKj"/>
                             <constraint firstItem="cQX-40-FJT" firstAttribute="centerX" secondItem="cc7-Wc-Tw2" secondAttribute="centerX" constant="6" id="QN0-0P-gn8"/>
                             <constraint firstItem="cQX-40-FJT" firstAttribute="centerY" secondItem="cc7-Wc-Tw2" secondAttribute="centerY" constant="-12" id="S8g-EW-SpG"/>
-                            <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="16" id="Wps-kt-pr4"/>
+                            <constraint firstItem="Rms-WH-upo" firstAttribute="top" secondItem="y1V-tc-Ltn" secondAttribute="bottom" constant="46" id="Wps-kt-pr4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rms-WH-upo" secondAttribute="trailing" constant="24" id="aIN-vS-zXI"/>
                             <constraint firstItem="Rms-WH-upo" firstAttribute="leading" secondItem="cc7-Wc-Tw2" secondAttribute="leadingMargin" constant="23" id="gdl-Kj-c7I"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="trailing" secondItem="Rms-WH-upo" secondAttribute="trailing" id="god-YT-jQ7"/>
