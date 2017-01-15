@@ -359,6 +359,9 @@
                                 <state key="normal" title="X">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gaK-7j-YCi" kind="unwind" unwindAction="unwindFromCheckupWithSegue:" id="l4l-2u-crf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's start with the Left foot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-WH-upo">
                                 <rect key="frame" x="39" y="27" width="296" height="114"/>
@@ -392,6 +395,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrC-B3-Nul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gaK-7j-YCi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1816.8" y="96.7016491754123"/>
         </scene>
