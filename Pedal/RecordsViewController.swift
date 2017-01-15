@@ -24,7 +24,7 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeDataButton.setTitle("Sorty by Category", for: .normal)
+        changeDataButton.setTitle("Sort by Category", for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
