@@ -102,6 +102,12 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
                 
             }
         }
+        
+        else if segue.identifier == "seeSensitivity"{
+            if let senseVc = segue.destination as? SensitivityCollectionViewController{
+                senseVc.patient = self.patient
+            }
+        }
     }
 }
 
@@ -158,8 +164,20 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
             selectedCategory = Category(rawValue: self.categories[indexPath.row])
            
             if selectedCategory == .pulse {
-                performSegue(withIdentifier: "seePulse", sender: self)
+                if patient!.checkups.count > 1{
+                    performSegue(withIdentifier: "seePulse", sender: self)
+                }
+                else{
+                    let alert = UIAlertController(title: "Chart Needs More Data", message: "You need at least two checkups to see your progress on a chart", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
+                
+            else if selectedCategory == .sensitivity{
+                performSegue(withIdentifier: "seeSensitivity", sender: self)
+            }
+                
             
             else{
                 performSegue(withIdentifier: "seeCategory", sender: self)

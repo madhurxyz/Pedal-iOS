@@ -13,10 +13,7 @@ class PulseView: UIView {
 
     @IBOutlet weak var feltPulseImage: UIImageView!
     
-    @IBOutlet weak var beatsBar: UISlider!
-    @IBOutlet weak var strengthBar: UISlider!
-    
-    @IBOutlet weak var feltPulseLabel: UILabel!
+
     @IBOutlet weak var beatsLabel: UILabel!
     @IBOutlet weak var stengthLabel: UILabel!
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07867EF06B998BB5BC465D14 /* Pods_PedalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4590BEE79A332498D018B5 /* Pods_PedalUITests.framework */; };
 		65374B2B5C8C68D509F91A0A /* Pods_Pedal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AAC5DE80E4C497E550F7E8 /* Pods_Pedal.framework */; };
+		BD30BFDC1E2A80230040B2E6 /* SensitivityCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30BFDB1E2A80230040B2E6 /* SensitivityCollectionViewController.swift */; };
+		BD30BFDE1E2A820D0040B2E6 /* SenseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30BFDD1E2A820D0040B2E6 /* SenseCollectionCell.swift */; };
 		BD5A420A1E236092007EB1B0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A42091E236092007EB1B0 /* SettingsViewController.swift */; };
 		E007ADA61E288E86002A3979 /* NoCheckupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007ADA51E288E86002A3979 /* NoCheckupsViewController.swift */; };
 		E00E222A1DFF2F3600442D0E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E22291DFF2F3600442D0E /* Helper.swift */; };
@@ -101,6 +103,8 @@
 		72AAC5DE80E4C497E550F7E8 /* Pods_Pedal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pedal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4590BEE79A332498D018B5 /* Pods_PedalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PedalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B1E5517927E97829FC3978 /* Pods-PedalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PedalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PedalUITests/Pods-PedalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD30BFDB1E2A80230040B2E6 /* SensitivityCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensitivityCollectionViewController.swift; sourceTree = "<group>"; };
+		BD30BFDD1E2A820D0040B2E6 /* SenseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenseCollectionCell.swift; sourceTree = "<group>"; };
 		BD5A42091E236092007EB1B0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BE20F2ED48788F069C8C244F /* Pods-PedalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PedalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PedalUITests/Pods-PedalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E007ADA51E288E86002A3979 /* NoCheckupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCheckupsViewController.swift; sourceTree = "<group>"; };
@@ -389,6 +393,8 @@
 				E07512D61E00890900E35AED /* PulseViewController.swift */,
 				E07512D11E00890900E35AED /* CategoryCollectionViewCell.swift */,
 				E07512D91E00890900E35AED /* SeeCategoryViewController.swift */,
+				BD30BFDD1E2A820D0040B2E6 /* SenseCollectionCell.swift */,
+				BD30BFDB1E2A80230040B2E6 /* SensitivityCollectionViewController.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -490,7 +496,7 @@
 				TargetAttributes = {
 					E06D97DA1DF0D65F00BC31B9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5M7MAFMP3Z;
+						DevelopmentTeam = PU7KSX8Z6J;
 						ProvisioningStyle = Automatic;
 					};
 					E06D97F11DF0D65F00BC31B9 = {
@@ -717,6 +723,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0224C7C1DF9DF6200BA4D95 /* PulseQ1ViewController.swift in Sources */,
+				BD30BFDE1E2A820D0040B2E6 /* SenseCollectionCell.swift in Sources */,
 				E00E22301DFF8E3900442D0E /* SensitivityViewController.swift in Sources */,
 				E0224C7E1DF9E93D00BA4D95 /* PulseQ2ViewController.swift in Sources */,
 				E007ADA61E288E86002A3979 /* NoCheckupsViewController.swift in Sources */,
@@ -730,6 +737,7 @@
 				E0224C801DF9ECCD00BA4D95 /* PulseQ3ViewController.swift in Sources */,
 				E03A129C1DF7475D00C27298 /* Patient.swift in Sources */,
 				E06D97DF1DF0D65F00BC31B9 /* AppDelegate.swift in Sources */,
+				BD30BFDC1E2A80230040B2E6 /* SensitivityCollectionViewController.swift in Sources */,
 				E07512E01E00890900E35AED /* PulseViewController.swift in Sources */,
 				E0B52B631DFB46D500CCCA65 /* AnkleCameraViewController.swift in Sources */,
 				E07512E41E00890900E35AED /* SeeCheckupCollectionViewController.swift in Sources */,
@@ -937,7 +945,7 @@
 			baseConfigurationReference = 0D3FAAEF4B85F745FB1A84D1 /* Pods-Pedal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5M7MAFMP3Z;
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
 				INFOPLIST_FILE = Pedal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -953,7 +961,7 @@
 			baseConfigurationReference = 1C870F4C2CE47838110B5C18 /* Pods-Pedal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5M7MAFMP3Z;
+				DEVELOPMENT_TEAM = PU7KSX8Z6J;
 				INFOPLIST_FILE = Pedal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
