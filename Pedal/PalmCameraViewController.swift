@@ -26,7 +26,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
-        if palmImageView.image != nil{
+        if palmImageView.image != #imageLiteral(resourceName: "yourImage.jpg") {
             performSegue(withIdentifier: "ankle", sender: self)
         }
         
