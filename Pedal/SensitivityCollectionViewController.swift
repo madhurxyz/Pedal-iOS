@@ -25,7 +25,7 @@ class SensitivityCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for c in patient.checkups {
+        for c in patient.checkups.reversed() {
             leftData.append(c.left!.highSense.toPicture()!)
             leftData.append(c.left!.lowSense.toPicture()!)
             rightData.append(c.right!.highSense.toPicture()!)

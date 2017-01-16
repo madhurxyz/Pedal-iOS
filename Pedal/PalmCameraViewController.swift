@@ -72,7 +72,6 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
         palmImageView.backgroundColor = .red
         palmImageView.clipsToBounds = true
         palmImageView.layer.masksToBounds = true
-        
         addGesture()
     }
 

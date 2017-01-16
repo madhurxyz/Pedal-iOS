@@ -43,7 +43,7 @@ class SeeCategoryViewController: UIViewController {
     
 
     func getDataByCategory(){
-        for checkup in patient!.checkups{
+        for checkup in patient!.checkups.reversed(){
             //left side
             let imagesLeft = checkup.left!.itemByCategory(category: selectedCategory!)
             let dataLeft = (imagesLeft.0, imagesLeft.1, checkup.date)

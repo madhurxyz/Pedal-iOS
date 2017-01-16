@@ -92,7 +92,6 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
             if let seeCategory = segue.destination as? SeeCategoryViewController{
                 seeCategory.patient = self.patient
                 seeCategory.selectedCategory = self.selectedCategory
-                
             }
         }
         
@@ -131,7 +130,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "checkup") as! RecordsTableViewCell
         
         if sortByDate{
-            let checkup = patient!.checkups[indexPath.row]
+            let checkup = patient!.checkups.reversed()[indexPath.row]
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .long
             
@@ -157,7 +156,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if sortByDate{
-            selectedCheckup = self.patient!.checkups[indexPath.row]
+            selectedCheckup = self.patient!.checkups.reversed()[indexPath.row]
             performSegue(withIdentifier: "seeCheckup", sender: self)
         }
         else{
@@ -192,7 +191,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
         var send:UITableViewRowAction?
         if sortByDate{
              send = UITableViewRowAction(style: .normal, title: "Send") { action, index in
-                let checkup = self.patient!.checkups[index.row]
+                let checkup = self.patient!.checkups.reversed()[index.row]
                 self.sendCheckup(checkup: checkup)
             }
         return [send!]
