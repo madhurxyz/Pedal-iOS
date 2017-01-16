@@ -80,6 +80,10 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
         }
     }
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "seeCheckup"{

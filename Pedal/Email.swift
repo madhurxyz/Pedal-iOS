@@ -15,6 +15,7 @@ struct Email {
     var subject:String
     var images: [(data:Data,fileName:String)] = []
     var body:String
+    let imageNames: [String] = ["leftAnkle", "rightAnkle", "leftPalm", "rightPalm", "leftStanding", "rightStanding", "leftHighSense", "rightHighSense", "leftLowSense", "leftHighSense"]
    
     
     
@@ -26,7 +27,7 @@ struct Email {
         self.recipient = recipient
         self.subject = "Pedal check from \(name) on \(dateFormatter.string(from: checkup.date))"
         
-        let imageNames: [String] = ["leftAnkle, rightAnkle, leftPalm, rightPalm, leftStanding, rightStanding, leftHighSense, rightHighSense, leftLowSense, leftHighSense"]
+
         
         //Code below is useless after refactoring...but more work to replace at this point
         let leftAnkleImageData = checkup.left!.ankle
@@ -43,8 +44,8 @@ struct Email {
         
         let allImages: [Data?] = [leftAnkleImageData, rightAnkleImageData, leftPalmImageData, rightPalmImageData, leftStandingData, rightStandingData, leftSenseHighImageData, rightSenseHighImageData, leftSenseLowImageData, rightSenseLowImageData]
         
-        for i in 0...allImages.count {
-            images.append((allImages[i]!, imageNames[i]))
+        for i in 0...allImages.count - 1 {
+            images.append((allImages[i]!,imageNames[i]))
         }
         
         let pulseFeltRight = checkup.left!.pulse!.felt
@@ -60,6 +61,7 @@ struct Email {
         let reportLeft:String =  "Right Foot: \n  Pulse: \(pulseFeltRight) \n Beats: \(pulseBeatRight), \n Strength\(pulseStrengthRight)"
         
         self.body = reportRight + reportLeft
-   
     }
+    
+    
 }

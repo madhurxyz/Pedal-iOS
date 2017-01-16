@@ -508,7 +508,7 @@
 				TargetAttributes = {
 					E06D97DA1DF0D65F00BC31B9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5M7MAFMP3Z;
+						DevelopmentTeam = DSBY73HWC3;
 						ProvisioningStyle = Automatic;
 					};
 					E06D97F11DF0D65F00BC31B9 = {
@@ -961,7 +961,7 @@
 			baseConfigurationReference = 0D3FAAEF4B85F745FB1A84D1 /* Pods-Pedal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5M7MAFMP3Z;
+				DEVELOPMENT_TEAM = DSBY73HWC3;
 				INFOPLIST_FILE = Pedal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -977,7 +977,7 @@
 			baseConfigurationReference = 1C870F4C2CE47838110B5C18 /* Pods-Pedal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5M7MAFMP3Z;
+				DEVELOPMENT_TEAM = DSBY73HWC3;
 				INFOPLIST_FILE = Pedal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
