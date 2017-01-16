@@ -51,7 +51,7 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
     @IBAction func changeData(){
         if self.sortByDate{
             //changing to categories
-            self.changeDataButton.setTitle("Sorty by Date", for: .normal)
+            self.changeDataButton.setTitle("Sort by Date", for: .normal)
         }
         else{
             self.changeDataButton.setTitle("Sort by Category", for: .normal)
