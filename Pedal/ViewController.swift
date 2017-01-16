@@ -140,19 +140,19 @@ class ViewController: UIViewController {
         let numWeeks = interval/secondsInWeek
         
         if numWeeks < 1{
-            return ("recently", "Your next checkup in 3 weeks")
+            return ("recently.", "Your next checkup is in 3 weeks!")
         }
             
         else if numWeeks < 2{
-            return("one week ago", "Your next checkup is in 2 weeks")
+            return("1 week ago.", "Your next checkup is in 2 weeks!")
         }
             
         else if numWeeks < 3{
-            return("two weeks ago", "You should do you next check soon")
+            return("2 weeks ago.", "Your next checkup is in a week!")
         }
             
         else{
-            return("more than three weeks ago", "You should do a checkup today")
+            return("3+ weeks ago.", "You should check your feet today!")
         }
     }
     

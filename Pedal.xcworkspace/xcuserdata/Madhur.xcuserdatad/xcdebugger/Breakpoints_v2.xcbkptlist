@@ -175,8 +175,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
             endingLineNumber = "150"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            landmarkName = "decideInterval()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -191,7 +191,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
             endingLineNumber = "139"
-            landmarkName = "prepare(for:sender:)"
+            landmarkName = "decideInterval()"
             landmarkType = "7">
             <Locations>
                <Location
