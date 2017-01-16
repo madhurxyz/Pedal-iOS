@@ -17,13 +17,7 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var ankleImageView: UIImageView!
 
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
+        rotateImage()
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
         
@@ -48,25 +42,9 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
             
         }
     }
-    func rotate(){
-        if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation))
-        {
-            instructionOneLabel.isHidden = true
-            instructionTwoLabel.isHidden = true
-            instructionThreeLabel.isHidden = true
-        }
-        
-        if(UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
-        {
-            instructionOneLabel.isHidden = false
-            instructionTwoLabel.isHidden = false
-            instructionThreeLabel.isHidden = false
-        }
-        
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(AnkleCameraViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         storage = self.navigationController as? StorageController
         addGesture()
         
