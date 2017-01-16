@@ -71,6 +71,8 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
         palmImageView.backgroundColor = .red
         palmImageView.clipsToBounds = true
         palmImageView.layer.masksToBounds = true
+        
+        addGesture()
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,4 +91,29 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
         return .lightContent
     }
 
+}
+
+extension PalmCameraViewController{
+    
+    //Refactor these for picture controllers when you get time
+    func rotateImage(){
+        UIView.animate(withDuration: 2.0, animations: {
+            self.palmImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+        })
+    }
+    
+    func openCamera(){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func addGesture(){
+        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        self.palmImageView.addGestureRecognizer(gesture)
+    }
 }

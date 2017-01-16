@@ -86,9 +86,8 @@ class ViewController: UIViewController {
             lastCheckDate = thisPatient!.checkups[thisPatient!.checkups.count - 1].date
             let lastCheck = format.string(from: lastCheckDate!, to: todaysDate)
             youCheckedLabel.isHidden = false
-//            lastCheckLabel.text = "\(lastCheck!) ago."
-            lastCheckLabel.text = "just now."
-            self.recommendationLabel.text = "Your next check is in 3 weeks!"
+            lastCheckLabel.text = decideInterval().ago
+            self.recommendationLabel.text = decideInterval().next
             self.recordsButton.isHidden = false
         }
             
@@ -131,6 +130,30 @@ class ViewController: UIViewController {
         nameLabel.text = "Hi \(name),"
         
 
+    }
+    
+    func decideInterval() -> (ago:String, next:String){
+        let todaysDate = Date()
+        var lastCheckDate: Date = thisPatient!.checkups.last!.date
+        let interval = todaysDate.timeIntervalSince(lastCheckDate)
+        let secondsInWeek:Double = 604800
+        let numWeeks = interval/secondsInWeek
+        
+        if numWeeks < 1{
+            return ("recently", "Your next checkup in 3 weeks")
+        }
+            
+        else if numWeeks < 2{
+            return("one week ago", "Your next checkup is in 2 weeks")
+        }
+            
+        else if numWeeks < 3{
+            return("two weeks ago", "You should do you next check soon")
+        }
+            
+        else{
+            return("more than three weeks ago", "You should do a checkup today")
+        }
     }
     
     

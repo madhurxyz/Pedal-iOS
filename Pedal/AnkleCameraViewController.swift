@@ -68,6 +68,8 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(AnkleCameraViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         storage = self.navigationController as? StorageController
+        addGesture()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -85,4 +87,30 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
         return .lightContent
     }
     
+}
+
+
+extension AnkleCameraViewController{
+    
+    //Refactor these for picture controllers when you get time
+    func rotateImage(){
+        UIView.animate(withDuration: 2.0, animations: {
+            self.ankleImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+        })
+    }
+    
+    func openCamera(){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func addGesture(){
+        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        self.ankleImageView.addGestureRecognizer(gesture)
+    }
 }
