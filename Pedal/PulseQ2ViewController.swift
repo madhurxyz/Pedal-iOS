@@ -15,6 +15,12 @@ class PulseQ2ViewController: UIViewController {
     @IBOutlet weak var pulseSlider: UISlider!
     @IBOutlet weak var pulseDisplayLabel: UILabel!
     
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var timerButton: UIButton!
+    @IBAction func timerButtonPressed(_ sender: Any) {
+        
+        
+    }
     @IBAction func pulseSliderPressed(_ sender: UISlider) {
         sliderValue = Int(sender.value)
         pulseDisplayLabel.text = String(sliderValue)
@@ -30,6 +36,7 @@ class PulseQ2ViewController: UIViewController {
         pulseSlider.minimumValue = 4
         pulseSlider.maximumValue = 30
         storage = self.navigationController as? StorageController
+        timerButton.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {

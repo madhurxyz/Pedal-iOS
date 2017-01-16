@@ -55,6 +55,7 @@
 		E07512E41E00890900E35AED /* SeeCheckupCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07512DA1E00890900E35AED /* SeeCheckupCollectionViewController.swift */; };
 		E085B00B1E2C28970087AAE9 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B00A1E2C28970087AAE9 /* close.png */; };
 		E085B00D1E2C5FA50087AAE9 /* pulseCheck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E085B00C1E2C5FA50087AAE9 /* pulseCheck.jpg */; };
+		E085B00F1E2C6D650087AAE9 /* RightFootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */; };
 		E0A3EC711E012BF1003D981B /* LeftFootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */; };
 		E0A3EC741E012D8D003D981B /* leftFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC721E012D8D003D981B /* leftFoot.png */; };
 		E0A3EC751E012D8D003D981B /* rightFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC731E012D8D003D981B /* rightFoot.png */; };
@@ -158,6 +159,7 @@
 		E07512DA1E00890900E35AED /* SeeCheckupCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeCheckupCollectionViewController.swift; sourceTree = "<group>"; };
 		E085B00A1E2C28970087AAE9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		E085B00C1E2C5FA50087AAE9 /* pulseCheck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pulseCheck.jpg; sourceTree = "<group>"; };
+		E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightFootViewController.swift; sourceTree = "<group>"; };
 		E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftFootViewController.swift; sourceTree = "<group>"; };
 		E0A3EC721E012D8D003D981B /* leftFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftFoot.png; sourceTree = "<group>"; };
 		E0A3EC731E012D8D003D981B /* rightFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightFoot.png; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				E07512CD1E00873D00E35AED /* Pulse */,
 				E07512CE1E00875400E35AED /* Pictures */,
 				E07512CF1E00877D00E35AED /* Sensitivity */,
+				E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */,
 			);
 			name = Appointment;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				E03A128A1DF7432F00C27298 /* Pulse.swift in Sources */,
 				E03A129A1DF746AB00C27298 /* Checkup.swift in Sources */,
 				E00E222A1DFF2F3600442D0E /* Helper.swift in Sources */,
+				E085B00F1E2C6D650087AAE9 /* RightFootViewController.swift in Sources */,
 				E0A3EC7D1E023EA2003D981B /* LowSenseViewController.swift in Sources */,
 				E07512E21E00890900E35AED /* RecordsViewController.swift in Sources */,
 			);

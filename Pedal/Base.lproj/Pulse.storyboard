@@ -204,7 +204,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many beats did you feel in 10 seconds? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0a-no-pH8">
-                                <rect key="frame" x="24" y="95" width="328" height="97"/>
+                                <rect key="frame" x="23" y="175" width="328" height="97"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="KSl-5l-PVB"/>
                                     <constraint firstAttribute="width" constant="328" id="PEz-SR-6af"/>
@@ -214,7 +214,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-CW-wya">
-                                <rect key="frame" x="64" y="200" width="248" height="31"/>
+                                <rect key="frame" x="63" y="280" width="248" height="31"/>
                                 <color key="tintColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="59Q-N4-99G"/>
@@ -225,7 +225,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOZ-c1-UMh">
-                                <rect key="frame" x="114" y="284" width="146" height="103"/>
+                                <rect key="frame" x="113" y="340" width="146" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="aQM-pQ-nUW"/>
                                     <constraint firstAttribute="width" constant="146" id="uEV-Yf-knP"/>
@@ -248,22 +248,53 @@
                                     <action selector="nextButtonPressed:" destination="ZHH-Tz-JaQ" eventType="touchUpInside" id="SCg-Lc-Lex"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-Uz-fIX">
+                                <rect key="frame" x="152" y="43" width="68" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="QW2-9S-RmS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="43"/>
+                                <color key="textColor" red="0.94567953020134232" green="0.35402684563758391" blue="0.35845557115221982" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFF-eK-O1l">
+                                <rect key="frame" x="116" y="107" width="141" height="37"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="Odh-dg-KOo"/>
+                                    <constraint firstAttribute="height" constant="37" id="uxO-F8-NcC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <state key="normal" title="Start Timer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerButtonPressed:" destination="ZHH-Tz-JaQ" eventType="touchUpInside" id="nI7-TE-EjI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yOZ-c1-UMh" firstAttribute="centerX" secondItem="lnQ-jB-St2" secondAttribute="centerX" id="8Lr-cA-sgZ"/>
+                            <constraint firstItem="b4N-Uz-fIX" firstAttribute="centerX" secondItem="zFF-eK-O1l" secondAttribute="centerX" id="5gN-0b-7B9"/>
+                            <constraint firstItem="yOZ-c1-UMh" firstAttribute="centerX" secondItem="lnQ-jB-St2" secondAttribute="centerX" constant="-1.5" id="8Lr-cA-sgZ"/>
                             <constraint firstItem="q0a-no-pH8" firstAttribute="centerX" secondItem="lnQ-jB-St2" secondAttribute="centerX" id="DFV-pE-G6H"/>
                             <constraint firstItem="jPf-CW-wya" firstAttribute="centerX" secondItem="lnQ-jB-St2" secondAttribute="centerX" id="P1R-ka-8uN"/>
-                            <constraint firstItem="yOZ-c1-UMh" firstAttribute="top" secondItem="jPf-CW-wya" secondAttribute="bottom" constant="54" id="X9j-Rs-2NT"/>
+                            <constraint firstItem="zFF-eK-O1l" firstAttribute="centerX" secondItem="q0a-no-pH8" secondAttribute="centerX" id="Ref-ay-vCn"/>
+                            <constraint firstItem="yOZ-c1-UMh" firstAttribute="top" secondItem="jPf-CW-wya" secondAttribute="bottom" constant="30" id="X9j-Rs-2NT"/>
                             <constraint firstItem="jPf-CW-wya" firstAttribute="top" secondItem="q0a-no-pH8" secondAttribute="bottom" constant="8" id="ciz-eG-wxB"/>
-                            <constraint firstItem="q0a-no-pH8" firstAttribute="top" secondItem="IGm-yK-efX" secondAttribute="bottom" constant="95" id="td6-CI-Qwc"/>
+                            <constraint firstItem="q0a-no-pH8" firstAttribute="top" secondItem="zFF-eK-O1l" secondAttribute="bottom" constant="31" id="nTT-eB-qZh"/>
+                            <constraint firstItem="b4N-Uz-fIX" firstAttribute="top" secondItem="IGm-yK-efX" secondAttribute="bottom" constant="43" id="ow8-WJ-9Dg"/>
+                            <constraint firstItem="q0a-no-pH8" firstAttribute="top" secondItem="IGm-yK-efX" secondAttribute="bottom" constant="175" id="td6-CI-Qwc"/>
                             <constraint firstItem="2vg-4I-8rt" firstAttribute="top" secondItem="5IW-wJ-PFn" secondAttribute="bottom" constant="20" id="uGu-5p-AU8"/>
                             <constraint firstItem="5IW-wJ-PFn" firstAttribute="trailing" secondItem="lnQ-jB-St2" secondAttribute="trailingMargin" id="y6u-Ve-ctT"/>
+                            <constraint firstItem="zFF-eK-O1l" firstAttribute="top" secondItem="b4N-Uz-fIX" secondAttribute="bottom" constant="8" id="z6F-XA-wjZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pulseDisplayLabel" destination="yOZ-c1-UMh" id="dOp-mC-KfW"/>
                         <outlet property="pulseSlider" destination="jPf-CW-wya" id="VX4-iC-kmw"/>
+                        <outlet property="timerButton" destination="zFF-eK-O1l" id="Kt5-xE-EE4"/>
+                        <outlet property="timerLabel" destination="b4N-Uz-fIX" id="fC9-wK-Fo6"/>
                         <segue destination="9aY-Y9-xde" kind="show" identifier="strength" id="mZ8-1K-9bF"/>
                     </connections>
                 </viewController>
