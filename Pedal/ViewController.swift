@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     @IBAction func chekupButtonPressed(_ sender: Any) {
         if self.thisPatient == nil{
-            performSegue(withIdentifier: "settings", sender: self)
+            performSegue(withIdentifier: "settingsFromMain", sender: self)
         }
         
         else{
@@ -162,6 +162,12 @@ class ViewController: UIViewController {
             if let nav = segue.destination as? UINavigationController{
                 let records = nav.viewControllers.first as! RecordsViewController
                 records.patient = self.thisPatient
+            }
+        }
+        
+        else if segue.identifier == "settingsFromMain"{
+            if let settings = segue.destination as? SettingsViewController{
+                settings.patient = self.thisPatient
             }
         }
     }

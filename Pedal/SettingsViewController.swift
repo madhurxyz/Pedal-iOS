@@ -88,9 +88,10 @@ class SettingsViewController: UIViewController {
                     tempWelcomeScreen.nameLabel.text! = "Hi \(patient.name),"
                 }
             }
+        }
         
         
-        if segue.identifier == "welcome"{
+        else if segue.identifier == "welcome"{
             if let welcomeScreen = segue.destination as? ViewController{
                 
                 let patient = welcomeScreen.memory![0]
@@ -99,13 +100,12 @@ class SettingsViewController: UIViewController {
                     patient.email = emailTextField.text!
                     patient.doctorEmail = doctorEmailTextField.text ?? ""
                 }
-
+                welcomeScreen.nameLabel.text! = "Hi \(patient.name),"
                 welcomeScreen.memory = realm.objects(Patient.self)
-                welcomeScreen.setup()
             }
         }
         
-    }
+    
     }
     
     

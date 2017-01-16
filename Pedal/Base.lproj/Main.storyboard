@@ -267,6 +267,9 @@
                                     <constraint firstAttribute="width" constant="32" id="aGm-4q-8LW"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="cogs.png"/>
+                                <connections>
+                                    <segue destination="som-sB-BxZ" kind="show" identifier="settingsFromMain" id="ucn-qv-U2z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -579,7 +582,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhT-59-9JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zRK-at-qYK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="287" y="-610"/>
+            <point key="canvasLocation" x="286" y="-843"/>
         </scene>
         <!--Storage Controller-->
         <scene sceneID="wJw-wv-hPD">
@@ -642,7 +645,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rzv-A1-qEe"/>
-        <segue reference="rmR-XH-UtQ"/>
+        <segue reference="ucn-qv-U2z"/>
         <segue reference="dDD-2Z-0UO"/>
     </inferredMetricsTieBreakers>
 </document>
