@@ -63,6 +63,7 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(StandingCameraViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
             storage = self.navigationController as? StorageController
+        addGesture()
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,7 +102,7 @@ extension StandingCameraViewController{
     }
     
     func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openCamera))
         self.standingImageView.isUserInteractionEnabled = true
         self.standingImageView.addGestureRecognizer(gesture)
     }

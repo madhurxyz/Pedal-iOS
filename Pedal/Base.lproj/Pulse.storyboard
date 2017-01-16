@@ -248,7 +248,7 @@
                                     <action selector="nextButtonPressed:" destination="ZHH-Tz-JaQ" eventType="touchUpInside" id="SCg-Lc-Lex"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-Uz-fIX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-Uz-fIX">
                                 <rect key="frame" x="152" y="43" width="68" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="QW2-9S-RmS"/>

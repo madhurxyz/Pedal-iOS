@@ -110,7 +110,7 @@ extension AnkleCameraViewController{
     }
     
     func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openCamera))
         self.ankleImageView.isUserInteractionEnabled = true
         self.ankleImageView.addGestureRecognizer(gesture)
     }

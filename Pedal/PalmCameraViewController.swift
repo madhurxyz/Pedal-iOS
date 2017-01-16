@@ -17,13 +17,14 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var palmImageView: UIImageView!
     
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
+        rotateImage()
+//        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+//            let imagePicker = UIImagePickerController()
+//            imagePicker.delegate = self
+//            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+//            imagePicker.allowsEditing = false
+//            self.present(imagePicker, animated: true, completion: nil)
+//        }
     }
     @IBAction func nextButtonPressed(_ sender: Any) {
         if palmImageView.image != #imageLiteral(resourceName: "yourImage.jpg") {
@@ -46,26 +47,26 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
             
         }
     }
-    func rotate(){
-        if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation))
-        {
-            instructionOneLabel.isHidden = true
-            instructionTwoLabel.isHidden = true
-            instructionThreeLabel.isHidden = true
-        }
-        
-        if(UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
-        {
-            instructionOneLabel.isHidden = false
-            instructionTwoLabel.isHidden = false
-            instructionThreeLabel.isHidden = false
-        }
-        
-    }
+//    func rotate(){
+//        if(UIDeviceOrientationIsLandscape(UIDevice.current.orientation))
+//        {
+//            instructionOneLabel.isHidden = true
+//            instructionTwoLabel.isHidden = true
+//            instructionThreeLabel.isHidden = true
+//        }
+//        
+//        if(UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+//        {
+//            instructionOneLabel.isHidden = false
+//            instructionTwoLabel.isHidden = false
+//            instructionThreeLabel.isHidden = false
+//        }
+//        
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(PalmCameraViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(PalmCameraViewController.rotate), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
         storage = self.navigationController as? StorageController
         palmImageView.backgroundColor = .red
@@ -103,7 +104,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openCamera))
         self.palmImageView.isUserInteractionEnabled = true
         self.palmImageView.addGestureRecognizer(gesture)
     }

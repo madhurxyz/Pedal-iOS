@@ -66,7 +66,6 @@ extension PulseQ2ViewController{
     
     func pressTimer(){
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-        self.timerLabel.text! = "Reset"
     }
     
     func updateTime(){
