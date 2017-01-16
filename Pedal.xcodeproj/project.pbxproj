@@ -56,6 +56,7 @@
 		E085B00B1E2C28970087AAE9 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B00A1E2C28970087AAE9 /* close.png */; };
 		E085B00D1E2C5FA50087AAE9 /* pulseCheck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E085B00C1E2C5FA50087AAE9 /* pulseCheck.jpg */; };
 		E085B00F1E2C6D650087AAE9 /* RightFootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */; };
+		E085B0111E2C75F70087AAE9 /* sensitivityInstructions.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E085B0101E2C75F70087AAE9 /* sensitivityInstructions.jpg */; };
 		E0A3EC711E012BF1003D981B /* LeftFootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */; };
 		E0A3EC741E012D8D003D981B /* leftFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC721E012D8D003D981B /* leftFoot.png */; };
 		E0A3EC751E012D8D003D981B /* rightFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC731E012D8D003D981B /* rightFoot.png */; };
@@ -160,6 +161,7 @@
 		E085B00A1E2C28970087AAE9 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		E085B00C1E2C5FA50087AAE9 /* pulseCheck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pulseCheck.jpg; sourceTree = "<group>"; };
 		E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightFootViewController.swift; sourceTree = "<group>"; };
+		E085B0101E2C75F70087AAE9 /* sensitivityInstructions.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sensitivityInstructions.jpg; sourceTree = "<group>"; };
 		E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftFootViewController.swift; sourceTree = "<group>"; };
 		E0A3EC721E012D8D003D981B /* leftFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftFoot.png; sourceTree = "<group>"; };
 		E0A3EC731E012D8D003D981B /* rightFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightFoot.png; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		E03A129E1DF76C9900C27298 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E085B0101E2C75F70087AAE9 /* sensitivityInstructions.jpg */,
 				E085B00C1E2C5FA50087AAE9 /* pulseCheck.jpg */,
 				E085B00A1E2C28970087AAE9 /* close.png */,
 				E04740F81E29E960002CC207 /* yourImage.jpg */,
@@ -565,6 +568,7 @@
 				E06D97E91DF0D65F00BC31B9 /* Assets.xcassets in Resources */,
 				E06D97E41DF0D65F00BC31B9 /* Main.storyboard in Resources */,
 				E0A3EC7B1E01D874003D981B /* cogs_white.png in Resources */,
+				E085B0111E2C75F70087AAE9 /* sensitivityInstructions.jpg in Resources */,
 				E04740EE1E29D899002CC207 /* Records.storyboard in Resources */,
 				E03A12A81DF76F8600C27298 /* PedalLogoWhite.png in Resources */,
 				E03A12AA1DF76FF400C27298 /* PedalLogoRed.png in Resources */,
