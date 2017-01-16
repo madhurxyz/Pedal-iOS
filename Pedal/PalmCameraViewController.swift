@@ -71,7 +71,6 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
         palmImageView.backgroundColor = .red
         palmImageView.clipsToBounds = true
         palmImageView.layer.masksToBounds = true
-        
         addGesture()
     }
 
@@ -103,7 +102,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openCamera))
         self.palmImageView.isUserInteractionEnabled = true
         self.palmImageView.addGestureRecognizer(gesture)
     }

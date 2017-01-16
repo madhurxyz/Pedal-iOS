@@ -101,7 +101,7 @@ extension StandingCameraViewController{
     }
     
     func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(openCamera))
         self.standingImageView.isUserInteractionEnabled = true
         self.standingImageView.addGestureRecognizer(gesture)
     }
