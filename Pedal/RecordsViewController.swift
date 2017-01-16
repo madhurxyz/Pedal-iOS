@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import RealmSwift
 
 class RecordsViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
@@ -193,16 +194,56 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         var send:UITableViewRowAction?
+        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+            let deleteAlert = UIAlertController(title: "Delete checkup?", message: "Are you sure you want to delete this checkup?", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "DELETE", style: .default, handler: { action in
+                let checkups = self.patient!.checkups
+                let mostRecentCheckup = checkups.last!
+                let checkForRow = checkups[index.row]
+                if mostRecentCheckup  != checkForRow{
+                    let realm = try! Realm()
+                    try! realm.write {
+                        checkups.remove(objectAtIndex: index.row)
+                    }
+                    tableView.reloadData()
+                }
+                else{
+                    let alert = UIAlertController(title: "Cannot Delete This Checkup", message: "You cannot delete the most recent checkup", preferredStyle: .alert)
+                    
+                    alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            })
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            deleteAlert.addAction(okAction)
+            deleteAlert.addAction(cancelAction)
+            self.present(deleteAlert, animated: true, completion: nil)
+        }
+        
         if sortByDate{
-             send = UITableViewRowAction(style: .normal, title: "Send") { action, index in
-                let checkup = self.patient!.checkups.reversed()[index.row]
+            send = UITableViewRowAction(style: .normal, title: "Send") { action, index in
+                let checkup = self.patient!.checkups[index.row]
                 self.sendCheckup(checkup: checkup)
             }
-        return [send!]
+            delete.backgroundColor = UIColor.red
+            send!.backgroundColor = UIColor.blue
+            return [send!, delete]
         }
-    
-    return nil
+        
+        return nil
     }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        if sortByDate{
+            return .delete
+        }
+        else {
+            return .none
+        }
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
