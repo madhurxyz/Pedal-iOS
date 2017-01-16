@@ -420,10 +420,10 @@
 			isa = PBXGroup;
 			children = (
 				E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */,
+				E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */,
 				E07512CD1E00873D00E35AED /* Pulse */,
 				E07512CE1E00875400E35AED /* Pictures */,
 				E07512CF1E00877D00E35AED /* Sensitivity */,
-				E085B00E1E2C6D650087AAE9 /* RightFootViewController.swift */,
 			);
 			name = Appointment;
 			sourceTree = "<group>";

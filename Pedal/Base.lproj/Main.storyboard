@@ -393,10 +393,10 @@
             </objects>
             <point key="canvasLocation" x="1816.8" y="96.7016491754123"/>
         </scene>
-        <!--View Controller-->
+        <!--Right Foot View Controller-->
         <scene sceneID="BA1-Y3-8BD">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-tMq-SZ-5aV" id="tMq-SZ-5aV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-tMq-SZ-5aV" id="tMq-SZ-5aV" customClass="RightFootViewController" customModule="Pedal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uLp-ir-TKl"/>
                         <viewControllerLayoutGuide type="bottom" id="Scx-AY-ejg"/>
@@ -448,6 +448,9 @@
                             <constraint firstItem="04i-7d-PKh" firstAttribute="centerX" secondItem="4k1-i7-435" secondAttribute="centerX" constant="-6" id="sg1-p3-J9J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="DPr-6v-urv" id="nY2-GG-iBJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDf-Fk-R7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
