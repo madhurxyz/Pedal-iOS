@@ -80,3 +80,28 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
         return .lightContent
     }
 }
+
+extension StandingCameraViewController{
+    
+    //Refactor these for picture controllers when you get time
+    func rotateImage(){
+        UIView.animate(withDuration: 2.0, animations: {
+            self.standingImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+        })
+    }
+    
+    func openCamera(){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func addGesture(){
+        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        self.standingImageView.addGestureRecognizer(gesture)
+    }
+}
