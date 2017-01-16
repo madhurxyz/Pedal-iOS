@@ -73,7 +73,7 @@ extension AnkleCameraViewController{
     //Refactor these for picture controllers when you get time
     func rotateImage(){
         UIView.animate(withDuration: 2.0, animations: {
-            self.ankleImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+            self.ankleImageView.transform = self.ankleImageView.transform.rotated(by: CGFloat(M_PI_2))
         })
     }
     

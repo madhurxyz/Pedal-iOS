@@ -91,7 +91,7 @@ extension PalmCameraViewController{
     //Refactor these for picture controllers when you get time
     func rotateImage(){
         UIView.animate(withDuration: 2.0, animations: {
-            self.palmImageView.transform = CGAffineTransform(rotationAngle: (CGFloat(M_PI)))
+            self.palmImageView.transform = self.palmImageView.transform.rotated(by: CGFloat(M_PI_2))
         })
     }
     

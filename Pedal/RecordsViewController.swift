@@ -13,7 +13,7 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
     
     var patient:Patient?
     var sortByDate = true
-    var categories:[String] = ["Sensitivity", "Pulse", "Palm", "Ankle", "Standing"]
+    var categories:[String] = ["Pulse", "Palm", "Ankle", "Standing", "Sensitivity",]
     var selectedCategory: Category?
     var selectedCheckup: Checkup?
     
