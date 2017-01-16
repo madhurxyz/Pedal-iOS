@@ -90,6 +90,23 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    func openCamera(){
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func addGesture(){
+        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
+        self.palmImageView.isUserInteractionEnabled = true
+        self.palmImageView.addGestureRecognizer(gesture)
+    }
 
 }
 
@@ -102,18 +119,6 @@ extension PalmCameraViewController{
         })
     }
     
-    func openCamera(){
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
-    
-    func addGesture(){
-        let gesture = UIGestureRecognizer(target: self, action: #selector(openCamera))
-        self.palmImageView.addGestureRecognizer(gesture)
-    }
+
+
 }
