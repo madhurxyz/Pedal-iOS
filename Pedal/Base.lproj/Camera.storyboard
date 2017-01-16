@@ -34,7 +34,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Nullam vehicula odio at odio auctor, et volutpat erat vestibulum." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EX1-K2-8kv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Sit upright in a chair and place your ankle on your knee." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EX1-K2-8kv">
                                 <rect key="frame" x="42" y="117" width="291" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="edI-Vl-GMW"/>
@@ -43,7 +43,7 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Curabitur et eros tempus, tempus massa et, blandit tortor." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-ha-OKi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Line up the long axis of your foot with the long axis of your phone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E4D-ha-OKi">
                                 <rect key="frame" x="42" y="190" width="291" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="O6o-0X-QIM"/>
@@ -128,7 +128,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-Tl-xHw">
                                 <rect key="frame" x="190" y="388" width="154" height="205"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Hit 'Camera' and take a Photo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-iQ-DGJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Click 'Your Image Here' and take a Photo." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-iQ-DGJ">
                                 <rect key="frame" x="25" y="28" width="324" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="0wj-Xx-c8O"/>
@@ -137,19 +137,10 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.  Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Nb-1Hp">
-                                <rect key="frame" x="25" y="143" width="324" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Click 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-ul-zd0">
+                                <rect key="frame" x="25" y="69" width="324" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="WrR-wL-AOY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Hit 'Next' when your image looks close to the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-ul-zd0">
-                                <rect key="frame" x="25" y="62" width="324" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="VLI-Cg-crk"/>
+                                    <constraint firstAttribute="height" constant="37" id="VLI-Cg-crk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -175,6 +166,15 @@
                                     <action selector="nextButtonPressed:" destination="DSD-8V-fIZ" eventType="touchUpInside" id="N8b-8s-Zxu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. You can retake the picture as many times. Click 'Next' when you're done." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Nb-1Hp">
+                                <rect key="frame" x="25" y="107" width="324" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="WrR-wL-AOY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -192,7 +192,7 @@
                             <constraint firstItem="me4-FZ-O3p" firstAttribute="top" secondItem="s4h-Nf-RIw" secondAttribute="bottom" constant="20" id="eIq-RR-xtC"/>
                             <constraint firstItem="FNR-Nb-1Hp" firstAttribute="leading" secondItem="ifa-l4-m8s" secondAttribute="leadingMargin" constant="9" id="fdi-ef-BTs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gLI-iQ-DGJ" secondAttribute="trailing" constant="10" id="fjh-cm-VRd"/>
-                            <constraint firstItem="m4B-ul-zd0" firstAttribute="top" secondItem="gLI-iQ-DGJ" secondAttribute="bottom" id="kVB-Eb-949"/>
+                            <constraint firstItem="m4B-ul-zd0" firstAttribute="top" secondItem="gLI-iQ-DGJ" secondAttribute="bottom" constant="7" id="kVB-Eb-949"/>
                             <constraint firstItem="9Kh-Tl-xHw" firstAttribute="width" secondItem="LpW-p1-SK9" secondAttribute="width" id="lsd-53-TQO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="m4B-ul-zd0" secondAttribute="trailing" constant="10" id="mxI-kS-kap"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Kh-Tl-xHw" secondAttribute="trailing" constant="15" id="nTq-XY-ccZ"/>
