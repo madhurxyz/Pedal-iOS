@@ -65,9 +65,11 @@ extension StandingCameraViewController{
     
     //Refactor these for picture controllers when you get time
     func rotateImage(){
-        UIView.animate(withDuration: 2.0, animations: {
-            self.standingImageView.transform = self.standingImageView.transform.rotated(by: CGFloat(M_PI_2))
-        })
+        self.standingImageView.image = Helper.imageRotatedByDegrees(oldImage: standingImageView.image!, deg: 90)
+
+//        UIView.animate(withDuration: 2.0, animations: {
+//            self.standingImageView.transform = self.standingImageView.transform.rotated(by: CGFloat(M_PI_2))
+//        })
     }
     
     func openCamera(){
