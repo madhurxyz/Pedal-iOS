@@ -34,7 +34,7 @@ class PulseQ1ViewController: UIViewController {
         
     }
     
-    let onColor = UIColor(red: 241.0/255.0, green: 90.0/255.0, blue: 91.0/255.0, alpha: 1.0)
+    let onColor = UIColor(red: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 1.0)
     let offColor = UIColor(red: 61.0/255.0, green:  62.0/255.0, blue: 61.0/255.0, alpha: 0.5)
     
     override func viewDidLoad() {
