@@ -34,13 +34,14 @@ class PulseViewController: UIViewController, LineChartDelegate {
         lineChart.colors[1] = UIColor(colorLiteralRed: 61.0/255.0, green: 191.0/255.0, blue: 184.0/255.0, alpha: 1.0)
         lineChart.y.axis.visible = false
         lineChart.y.axis.inset = 30
+        lineChart.delegate = self
         
 
 
 
 
         dateFormatter.dateStyle = .medium
-        self.dateLabel.text! = "January 16, 2017"
+//        self.dateLabel.text! = "January 16, 2017"
         
         buildLineChart()
         lineChart.animation.enabled = true
@@ -62,6 +63,7 @@ class PulseViewController: UIViewController, LineChartDelegate {
         
         
         self.dates = patient!.checkups.map{dateFormatter.string(from: $0.date)}
+        self.dates.insert("N/A", at: 0)
         
         
         self.leftLineData.insert(0, at: 0)
@@ -74,7 +76,7 @@ class PulseViewController: UIViewController, LineChartDelegate {
     
     func didSelectDataPoint(_ x: CGFloat, yValues: [CGFloat]) {
         let dateIndex = Int(x)
-        dateLabel.text = dates[dateIndex]
+        dateLabel.text! = dates[dateIndex]
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
