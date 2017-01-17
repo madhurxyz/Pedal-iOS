@@ -225,7 +225,7 @@
                                     <action selector="recordsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKa-v7-BmJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Nabil," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bf-o1-45e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Nabil," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7bf-o1-45e">
                                 <rect key="frame" x="21" y="48" width="313" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="dh9-zj-eu8"/>
@@ -646,8 +646,8 @@
         <image name="rightFoot.png" width="384" height="688"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="rzv-A1-qEe"/>
+        <segue reference="ucn-qv-U2z"/>
         <segue reference="Ee1-ov-mza"/>
-        <segue reference="gu0-aT-Hnk"/>
-        <segue reference="oY6-4y-RpA"/>
     </inferredMetricsTieBreakers>
 </document>

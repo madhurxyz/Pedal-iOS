@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Take photos.</string>
+	<string>Allow you to take photos of your precious feet.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Save photos.</string>
 	<key>UIAppFonts</key>

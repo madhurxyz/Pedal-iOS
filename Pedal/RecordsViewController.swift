@@ -25,7 +25,7 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        changeDataButton.setTitle("Sort by Category", for: .normal)
+        changeDataButton.setTitle("View by Category", for: .normal)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -56,10 +56,10 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
     @IBAction func changeData(){
         if self.sortByDate{
             //changing to categories
-            self.changeDataButton.setTitle("Sort by Date", for: .normal)
+            self.changeDataButton.setTitle("View by Date", for: .normal)
         }
         else{
-            self.changeDataButton.setTitle("Sort by Category", for: .normal)
+            self.changeDataButton.setTitle("View by Category", for: .normal)
         }
         self.sortByDate = !self.sortByDate
         tableView.reloadData()
@@ -176,7 +176,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
                     performSegue(withIdentifier: "seePulse", sender: self)
                 }
                 else{
-                    let alert = UIAlertController(title: "Chart Needs More Data", message: "You need at least two checkups to see your progress on a chart", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Chart Needs More Data", message: "You need at least two checkups to see your progress on a chart.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }
@@ -199,9 +199,9 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         var send:UITableViewRowAction?
         let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
-            let deleteAlert = UIAlertController(title: "Delete checkup?", message: "Are you sure you want to delete this checkup?", preferredStyle: .alert)
+            let deleteAlert = UIAlertController(title: "You're Deleting This Checkup", message: "Are you sure you want to delete this checkup?", preferredStyle: .alert)
             
-            let okAction = UIAlertAction(title: "DELETE", style: .default, handler: { action in
+            let okAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
                 let checkups = self.patient!.checkups
                 let mostRecentCheckup = checkups.last!
                 let checkForRow = checkups[index.row]
@@ -213,7 +213,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
                     tableView.reloadData()
                 }
                 else{
-                    let alert = UIAlertController(title: "Cannot Delete This Checkup", message: "You cannot delete the most recent checkup", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Cannot Delete This Checkup", message: "You cannot delete your most recent checkup.", preferredStyle: .alert)
                     
                     alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
