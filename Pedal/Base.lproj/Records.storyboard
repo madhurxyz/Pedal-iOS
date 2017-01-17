@@ -26,7 +26,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44K-nd-zbj">
                                 <rect key="frame" x="150.5" y="541" width="74" height="42"/>
-                                <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.96503475490000001" green="0.99419492480000005" blue="0.92524644519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -197,7 +197,7 @@
                                     <segment title="Left Foot"/>
                                     <segment title="Right Foot"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segmentTapped:" destination="ZlD-HR-hN6" eventType="valueChanged" id="GzE-J4-xfa"/>
                                 </connections>
@@ -341,7 +341,7 @@
                                     <segment title="Left Foot"/>
                                     <segment title="Right Foot"/>
                                 </segments>
-                                <color key="tintColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentedControl:" destination="GN2-i1-xrv" eventType="valueChanged" id="OVX-Od-w4Z"/>
                                 </connections>
@@ -495,7 +495,7 @@
                                     <segment title="Left Foot"/>
                                     <segment title="Right Foot"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segmentTapped:" destination="cKK-eH-jVB" eventType="valueChanged" id="1aK-ct-vnT"/>
                                 </connections>
@@ -558,7 +558,7 @@
                                     <segment title="Pulse"/>
                                     <segment title="Strength"/>
                                 </segments>
-                                <color key="tintColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segmentChanged:" destination="dSR-LV-Sxs" eventType="valueChanged" id="GU2-4U-iGe"/>
                                 </connections>
@@ -644,7 +644,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.83529411764705885" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
