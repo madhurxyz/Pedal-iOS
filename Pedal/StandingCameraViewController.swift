@@ -18,6 +18,7 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
         rotateImage()
     }
+    @IBOutlet weak var rotateButton: UIButton!
     @IBAction func standingButtonPressed(_ sender: Any) {
         if standingImageView.image != #imageLiteral(resourceName: "yourImage"){
             performSegue(withIdentifier: "sensitivity", sender: self)

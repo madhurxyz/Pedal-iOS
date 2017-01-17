@@ -16,6 +16,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var instructionThreeLabel: UILabel!
     @IBOutlet weak var palmImageView: UIImageView!
     
+    @IBOutlet weak var rotateButton: UIButton!
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
         rotateImage()
     }

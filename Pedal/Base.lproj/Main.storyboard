@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -473,13 +474,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-ew-V6p">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fww-iS-Tw3">
-                                        <rect key="frame" x="14" y="17" width="34" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fww-iS-Tw3">
+                                        <rect key="frame" x="14" y="25" width="22" height="22"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="34" id="c9Z-OI-PS5"/>
-                                            <constraint firstAttribute="height" constant="30" id="tiP-Ur-6gb"/>
+                                            <constraint firstAttribute="width" secondItem="fww-iS-Tw3" secondAttribute="height" multiplier="1:1" id="EqN-zG-mjU"/>
+                                            <constraint firstAttribute="width" constant="22" id="c9Z-OI-PS5"/>
+                                            <constraint firstAttribute="height" constant="22" id="tiP-Ur-6gb"/>
                                         </constraints>
-                                        <state key="normal" title="Back">
+                                        <state key="normal" image="close.png">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -487,7 +489,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgN-ds-Msw">
-                                        <rect key="frame" x="140" y="14" width="95" height="32"/>
+                                        <rect key="frame" x="140" y="22" width="95" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="95" id="dJA-hO-BQM"/>
                                             <constraint firstAttribute="height" constant="32" id="wNW-SR-JHp"/>
@@ -499,11 +501,11 @@
                                 </subviews>
                                 <color key="backgroundColor" cyan="0.0" magenta="0.80249999999999999" yellow="0.60209999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="lgN-ds-Msw" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="top" constant="14" id="1q5-zT-NbM"/>
+                                    <constraint firstItem="lgN-ds-Msw" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="top" constant="22" id="1q5-zT-NbM"/>
                                     <constraint firstItem="lgN-ds-Msw" firstAttribute="centerX" secondItem="GXe-ew-V6p" secondAttribute="centerX" id="Chq-Yp-yfy"/>
                                     <constraint firstItem="fww-iS-Tw3" firstAttribute="leading" secondItem="GXe-ew-V6p" secondAttribute="leading" constant="14" id="H6L-kc-Lxy"/>
                                     <constraint firstAttribute="height" constant="60" id="VtU-xo-mIW"/>
-                                    <constraint firstItem="fww-iS-Tw3" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="top" constant="17" id="XPE-cg-UTm"/>
+                                    <constraint firstItem="fww-iS-Tw3" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="top" constant="25" id="XPE-cg-UTm"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-UI-hew">
@@ -582,7 +584,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhT-59-9JA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zRK-at-qYK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="286" y="-843"/>
+            <point key="canvasLocation" x="285.60000000000002" y="-843.32833583208401"/>
         </scene>
         <!--Storage Controller-->
         <scene sceneID="wJw-wv-hPD">
