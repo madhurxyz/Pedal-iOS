@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="103" id="RxZ-rn-0DI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="75"/>
-                                <color key="textColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEq-7D-5kn">
@@ -395,6 +395,6 @@
         <image name="pulseCheck.jpg" width="913" height="689"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dhQ-YD-Zdi"/>
+        <segue reference="V1i-PK-HZA"/>
     </inferredMetricsTieBreakers>
 </document>
