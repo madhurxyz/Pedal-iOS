@@ -78,11 +78,11 @@ extension SensitivityCollectionViewController:UICollectionViewDelegate, UICollec
         }
         
         if row % 2 == 0 {
-            cell.senseLabel.text! = "Low Sensitivity"
+            cell.senseLabel.text! = "High Sensitivity"
         }
         
         else{
-            cell.senseLabel.text! = "High Sensitivity"
+            cell.senseLabel.text! = "Low Sensitivity"
         }
         
       return cell

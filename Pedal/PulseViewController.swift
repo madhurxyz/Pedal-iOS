@@ -14,6 +14,7 @@ class PulseViewController: UIViewController, LineChartDelegate {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var lineChart: LineChart!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var yaxisLabel: UILabel!
 
     
     var patient: Patient?
@@ -90,8 +91,10 @@ class PulseViewController: UIViewController, LineChartDelegate {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             titleLabel.text = "Pulse"
+            yaxisLabel.text = "BPM"
         case 1:
             titleLabel.text = "Strength"
+            yaxisLabel.text = "Units"
         default:
             break
         }
