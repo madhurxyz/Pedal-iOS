@@ -13,6 +13,8 @@ class PulseViewController: UIViewController, LineChartDelegate {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var lineChart: LineChart!
+    @IBOutlet weak var titleLabel: UILabel!
+
     
     var patient: Patient?
 //    var left: Foot?
@@ -37,7 +39,7 @@ class PulseViewController: UIViewController, LineChartDelegate {
 
 
         dateFormatter.dateStyle = .medium
-        self.dateLabel.text! = ""
+        self.dateLabel.text! = "January 16, 2017"
         
         buildLineChart()
         lineChart.animation.enabled = true
@@ -85,6 +87,14 @@ class PulseViewController: UIViewController, LineChartDelegate {
         
         lineChart.clearAll()
         buildLineChart()
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            titleLabel.text = "Pulse"
+        case 1:
+            titleLabel.text = "Strength"
+        default:
+            break
+        }
         
     }
     
