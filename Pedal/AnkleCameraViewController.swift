@@ -37,6 +37,7 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            self.rotateButton.isHidden = false
             ankleImageView.image = image
             ankleImageView.contentMode = .scaleToFill
             self.dismiss(animated: true, completion: nil)
@@ -46,6 +47,8 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.rotateButton.isHidden = true
         storage = self.navigationController as? StorageController
         addGesture()
         

@@ -35,6 +35,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            self.rotateButton.isHidden = false
             palmImageView.image = image
             palmImageView.contentMode = .scaleToFill
             self.dismiss(animated: true, completion: nil)
@@ -45,6 +46,7 @@ class PalmCameraViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.rotateButton.isHidden = true
         storage = self.navigationController as? StorageController
         palmImageView.backgroundColor = .red
         palmImageView.clipsToBounds = true

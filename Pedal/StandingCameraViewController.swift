@@ -33,6 +33,7 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
+            self.rotateButton.isHidden = false
             standingImageView.image = image
             standingImageView.contentMode = .scaleToFill
             self.dismiss(animated: true, completion: nil)
@@ -42,6 +43,8 @@ class StandingCameraViewController: UIViewController, UIImagePickerControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.rotateButton.isHidden = true
+
             storage = self.navigationController as? StorageController
         addGesture()
     }
