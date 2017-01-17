@@ -126,7 +126,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourImage" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-Tl-xHw">
                                 <rect key="frame" x="190" y="388" width="154" height="205"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Click 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-iQ-DGJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Press 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-iQ-DGJ">
                                 <rect key="frame" x="25" y="40" width="324" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="0wj-Xx-c8O"/>
@@ -135,7 +135,7 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Click 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-ul-zd0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Press 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-ul-zd0">
                                 <rect key="frame" x="25" y="89" width="324" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="VLI-Cg-crk"/>
@@ -164,7 +164,7 @@
                                     <action selector="nextButtonPressed:" destination="DSD-8V-fIZ" eventType="touchUpInside" id="N8b-8s-Zxu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Click 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Nb-1Hp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Press 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Nb-1Hp">
                                 <rect key="frame" x="25" y="141" width="324" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="WrR-wL-AOY"/>
@@ -327,7 +327,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourImage" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-Bc-652">
                                 <rect key="frame" x="190" y="395" width="154" height="205"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Click 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-xw-nXs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Press 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-xw-nXs">
                                 <rect key="frame" x="25" y="40" width="324" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="p5y-VV-2pT"/>
@@ -336,7 +336,7 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Click 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lJk-lA-sEE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Press 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lJk-lA-sEE">
                                 <rect key="frame" x="25" y="150" width="324" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Vtk-XY-9YR"/>
@@ -365,7 +365,7 @@
                                     <action selector="nextButtonPressed:" destination="fFW-xp-yng" eventType="touchUpInside" id="He9-Fm-DIs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Click 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vrj-in-Kx1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Press 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vrj-in-Kx1">
                                 <rect key="frame" x="25" y="89" width="324" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="iC3-IZ-NK7"/>
@@ -524,7 +524,7 @@
                                     <action selector="standingButtonPressed:" destination="YO5-Ff-bUP" eventType="touchUpInside" id="R90-px-vPb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Click 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-z1-Fop">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.  Press 'Your Image Here' and take a Photo. Retake as many times." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-z1-Fop">
                                 <rect key="frame" x="24" y="40" width="325" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="xpD-jd-fSf"/>
@@ -533,7 +533,7 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Click 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-yg-b1U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Press 'Next' when your image matches the demo image." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-yg-b1U">
                                 <rect key="frame" x="24" y="148" width="325" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="iFb-G7-dZU"/>
@@ -542,7 +542,7 @@
                                 <color key="textColor" cyan="0.0001418739557" magenta="0.0001772865653" yellow="0.0" black="0.82642093120000004" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Click 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KXB-sx-S6l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.  Press 'Rotate' to align image if necessary." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KXB-sx-S6l">
                                 <rect key="frame" x="24" y="89" width="325" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XP7-FG-Jli"/>
