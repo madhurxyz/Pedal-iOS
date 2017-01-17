@@ -33,7 +33,7 @@ class SettingsViewController: UIViewController {
         saveButton.layer.cornerRadius = 10
         
         
-        self.nameAlert = UIAlertController(title: "Improper name formatting", message: "Please Use a name at least two characters long", preferredStyle: .alert)
+        self.nameAlert = UIAlertController(title: "Text Fields Left Empty", message: "Please enter your Name and/or Email. Both fields must be more than 2 characters.", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         nameAlert?.addAction(okAction)
         
@@ -45,7 +45,6 @@ class SettingsViewController: UIViewController {
     }
     
     func viewTapped() {
-        print("view is tapped")
         view.endEditing(true)
         
     }

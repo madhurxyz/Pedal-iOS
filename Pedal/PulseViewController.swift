@@ -63,7 +63,7 @@ class PulseViewController: UIViewController, LineChartDelegate {
         
         
         self.dates = patient!.checkups.map{dateFormatter.string(from: $0.date)}
-        self.dates.insert("N/A", at: 0)
+        self.dates.insert("Press Dots for Date", at: 0)
         
         
         self.leftLineData.insert(0, at: 0)
