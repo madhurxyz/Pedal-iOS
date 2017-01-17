@@ -6,54 +6,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pedal/PulseViewController.swift"
-            timestampString = "503474349.064231"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "buildLineChart()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pedal.PulseViewController.buildLineChart () -&gt; ()"
-                  moduleName = "Pedal"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Madhur/Documents/pa/product/Pedal/Pedal/PulseViewController.swift"
-                  timestampString = "503474381.132099"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Pedal.PulseViewController.(buildLineChart () -&gt; ()).(closure #1)"
-                  moduleName = "Pedal"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Madhur/Documents/pa/product/Pedal/Pedal/PulseViewController.swift"
-                  timestampString = "503474381.135741"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "39"
-                  endingLineNumber = "39"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -410,12 +362,12 @@
                   moduleName = "Pedal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Madhur/Documents/pa/Pedal/Pedal/SettingsViewController.swift"
-                  timestampString = "506293279.440301"
+                  timestampString = "506311004.022429"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "3956">
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "3972">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -425,12 +377,12 @@
                   moduleName = "Pedal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Madhur/Documents/pa/Pedal/Pedal/SettingsViewController.swift"
-                  timestampString = "506293279.441841"
+                  timestampString = "506311004.024043"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "4096">
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "4112">
                </Location>
             </Locations>
          </BreakpointContent>

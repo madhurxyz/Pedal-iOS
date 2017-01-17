@@ -23,9 +23,19 @@ class PulseViewController: UIViewController, LineChartDelegate {
     var rightLineData:[CGFloat] = []
     var dates:[String] = []
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineChart.colors[0] = UIColor(colorLiteralRed: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 1.0)
+        lineChart.colors[1] = UIColor(colorLiteralRed: 61.0/255.0, green: 191.0/255.0, blue: 184.0/255.0, alpha: 1.0)
+        lineChart.y.axis.visible = false
+        lineChart.y.axis.inset = 30
+        
+
+
+
+
         dateFormatter.dateStyle = .medium
         self.dateLabel.text! = ""
         
@@ -35,10 +45,22 @@ class PulseViewController: UIViewController, LineChartDelegate {
     
 
     func buildLineChart(){
-       
-         self.leftLineData = patient!.checkups.map{CGFloat($0.left!.pulse!.beats)}
-         self.rightLineData = patient!.checkups.map{CGFloat($0.right!.pulse!.beats)}
-         self.dates = patient!.checkups.map{dateFormatter.string(from: $0.date)}
+        if segmentedControl.selectedSegmentIndex == 0{
+            self.leftLineData = patient!.checkups.map{CGFloat($0.left!.pulse!.beats)}
+            self.rightLineData = patient!.checkups.map{CGFloat($0.right!.pulse!.beats)}
+        }
+        
+        else{
+            
+            self.leftLineData = patient!.checkups.map{CGFloat($0.left!.pulse!.strength)}
+            self.rightLineData = patient!.checkups.map{CGFloat($0.right!.pulse!.strength)}
+        }
+
+        
+        
+        self.dates = patient!.checkups.map{dateFormatter.string(from: $0.date)}
+        
+        
         self.leftLineData.insert(0, at: 0)
         self.rightLineData.insert(0, at: 0)
 
@@ -58,5 +80,14 @@ class PulseViewController: UIViewController, LineChartDelegate {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    @IBAction func segmentChanged(_ sender: Any) {
+        
+        lineChart.clearAll()
+        buildLineChart()
+        
+    }
+    
+    
     
 }
