@@ -362,11 +362,11 @@
                   moduleName = "Pedal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Madhur/Documents/pa/Pedal/Pedal/SettingsViewController.swift"
-                  timestampString = "506372725.921811"
+                  timestampString = "506373708.100663"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
                   offsetFromSymbolStart = "3972">
                </Location>
                <Location
@@ -377,11 +377,11 @@
                   moduleName = "Pedal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Madhur/Documents/pa/Pedal/Pedal/SettingsViewController.swift"
-                  timestampString = "506372725.923387"
+                  timestampString = "506373708.102198"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
                   offsetFromSymbolStart = "4112">
                </Location>
             </Locations>

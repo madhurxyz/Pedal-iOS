@@ -204,7 +204,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
             let okAction = UIAlertAction(title: "Delete", style: .default, handler: { action in
                 let checkups = self.patient!.checkups
                 let mostRecentCheckup = checkups.last!
-                let checkForRow = checkups[index.row]
+                let checkForRow = checkups.reversed()[index.row]
                 if mostRecentCheckup  != checkForRow{
                     let deleteIndex = checkups.index(of: checkForRow)
                     let realm = try! Realm()
