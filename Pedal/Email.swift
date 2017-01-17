@@ -15,7 +15,7 @@ struct Email {
     var subject:String
     var images: [(data:Data,fileName:String)] = []
     var body:String
-    let imageNames: [String] = ["leftAnkle", "rightAnkle", "leftPalm", "rightPalm", "leftStanding", "rightStanding", "leftHighSense", "rightHighSense", "leftLowSense", "leftHighSense"]
+    let imageNames: [String] = ["leftHighSense", "rightHighSense", "leftLowSense", "leftHighSense","leftAnkle", "rightAnkle", "leftPalm", "rightPalm", "leftStanding", "rightStanding"]
    
     
     
@@ -42,7 +42,7 @@ struct Email {
         let rightSenseHighImageData = checkup.right!.highSense
         let rightSenseLowImageData = checkup.right!.lowSense
         
-        let allImages: [Data?] = [leftAnkleImageData, rightAnkleImageData, leftPalmImageData, rightPalmImageData, leftStandingData, rightStandingData, leftSenseHighImageData, rightSenseHighImageData, leftSenseLowImageData, rightSenseLowImageData]
+        let allImages: [Data?] = [leftSenseHighImageData, rightSenseHighImageData, leftSenseLowImageData, rightSenseLowImageData, leftAnkleImageData, rightAnkleImageData, leftPalmImageData, rightPalmImageData, leftStandingData, rightStandingData ]
         
         for i in 0...allImages.count - 1 {
             images.append((allImages[i]!,imageNames[i]))

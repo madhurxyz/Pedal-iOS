@@ -228,7 +228,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
         
         if sortByDate{
             send = UITableViewRowAction(style: .normal, title: "Send") { action, index in
-                let checkup = self.patient!.checkups[index.row]
+                let checkup = self.patient!.checkups.reversed()[index.row]
                 self.sendCheckup(checkup: checkup)
             }
             delete.backgroundColor = UIColor(colorLiteralRed: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 1.0)
