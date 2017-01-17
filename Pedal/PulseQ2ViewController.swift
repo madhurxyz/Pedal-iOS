@@ -50,10 +50,10 @@ class PulseQ2ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if !storage!.didCheckLeft{
-            storage!.leftBeats = self.sliderValue
+            storage!.leftBeats = Int(self.pulseSlider.value) * 6
         }
         else{
-            storage!.rightBeats = self.sliderValue
+            storage!.rightBeats = Int(self.pulseSlider.value) * 6
         }
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
