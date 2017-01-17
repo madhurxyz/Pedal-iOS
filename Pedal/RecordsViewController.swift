@@ -206,9 +206,10 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
                 let mostRecentCheckup = checkups.last!
                 let checkForRow = checkups[index.row]
                 if mostRecentCheckup  != checkForRow{
+                    let deleteIndex = checkups.index(of: checkForRow)
                     let realm = try! Realm()
                     try! realm.write {
-                        checkups.remove(objectAtIndex: index.row)
+                        checkups.remove(objectAtIndex: deleteIndex!)
                     }
                     tableView.reloadData()
                 }
