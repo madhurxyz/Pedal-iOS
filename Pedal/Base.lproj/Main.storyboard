@@ -344,7 +344,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="IuD-Vc-k9w" kind="show" id="dDD-2Z-0UO"/>
@@ -371,7 +371,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.83529411764705885" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="aDk-cB-3eE" firstAttribute="top" secondItem="uwE-yL-EVm" secondAttribute="bottom" constant="20" id="0iM-aD-wnx"/>
                             <constraint firstItem="uwE-yL-EVm" firstAttribute="leading" secondItem="Rms-WH-upo" secondAttribute="leading" id="JXO-nf-8u1"/>
@@ -416,7 +416,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019610000005" green="0.1058823529" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="IuD-Vc-k9w" kind="show" id="Ee1-ov-mza"/>
@@ -439,7 +439,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.83529411760000005" green="0.24313725489999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="5aJ-OC-Wob" secondAttribute="trailing" constant="24" id="3yn-hF-66O"/>
                             <constraint firstItem="04i-7d-PKh" firstAttribute="centerY" secondItem="4k1-i7-435" secondAttribute="centerY" constant="-12" id="6Te-aL-osW"/>
@@ -595,7 +595,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.83529411764705885" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -648,6 +648,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="rzv-A1-qEe"/>
         <segue reference="ucn-qv-U2z"/>
-        <segue reference="dDD-2Z-0UO"/>
+        <segue reference="Ee1-ov-mza"/>
     </inferredMetricsTieBreakers>
 </document>
