@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "women-foot.png",
+      "filename" : "ankle.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "women-foot@2x.png",
+      "filename" : "ankle-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "women-foot@3x.png",
+      "filename" : "ankle-2.png",
       "scale" : "3x"
     }
   ],

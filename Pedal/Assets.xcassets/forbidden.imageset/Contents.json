@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "forbidden-mark.png",
+      "filename" : "cross.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "forbidden-mark@2x.png",
+      "filename" : "cross-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "forbidden-mark@3x.png",
+      "filename" : "cross-2.png",
       "scale" : "3x"
     }
   ],

@@ -147,7 +147,7 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
             cell.sentButton.setBackgroundImage(#imageLiteral(resourceName: "mail-sent"), for: .normal)
             
             if !checkup.sent{
-                cell.sentButton.alpha = CGFloat(0.50)
+                cell.sentButton.alpha = CGFloat(1.0)
             }
         }
         
@@ -231,8 +231,8 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
                 let checkup = self.patient!.checkups[index.row]
                 self.sendCheckup(checkup: checkup)
             }
-            delete.backgroundColor = UIColor.red
-            send!.backgroundColor = UIColor.blue
+            delete.backgroundColor = UIColor(colorLiteralRed: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 1.0)
+            send!.backgroundColor = UIColor(colorLiteralRed: 61.0/255.0, green: 191.0/255.0, blue: 184.0/255.0, alpha: 1.0)
             return [send!, delete]
         }
         
