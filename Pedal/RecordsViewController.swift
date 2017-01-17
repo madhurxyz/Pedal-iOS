@@ -27,6 +27,10 @@ class RecordsViewController: UIViewController, MFMailComposeViewControllerDelega
         super.viewDidLoad()
         changeDataButton.setTitle("Sort by Category", for: .normal)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -244,8 +248,5 @@ extension RecordsViewController: UITableViewDelegate, UITableViewDataSource{
         }
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
     
 }

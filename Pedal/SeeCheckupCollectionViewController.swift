@@ -92,16 +92,16 @@ extension SeeCheckupCollectionViewController: UICollectionViewDelegate, UICollec
             pulseView.stengthLabel.text = String(selectedFoot!.pulse!.strength)
             
             let width = cell.frame.width
-            let height = cell.frame.height * 0.5
+            let height = cell.frame.height
             pulseView.frame.size = CGSize(width: width, height: height)
 
 
             
             if selectedFoot!.pulse!.felt{
-                pulseView.feltPulseImage.image = #imageLiteral(resourceName: "checkmark-for-verification")
+                pulseView.feltPulseImage.image = #imageLiteral(resourceName: "checkmark")
             }
             else{
-                pulseView.feltPulseImage.image = #imageLiteral(resourceName: "forbidden-mark")
+                pulseView.feltPulseImage.image = #imageLiteral(resourceName: "forbidden")
             }
             
             cell.addSubview(self.pulseView)
