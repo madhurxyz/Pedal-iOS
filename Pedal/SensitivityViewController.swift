@@ -37,7 +37,7 @@ class SensitivityViewController: UIViewController, SmoothViewDelegate {
         super.viewDidLoad()
         self.storage = self.navigationController as? StorageController
         
-        scribbleView.color = UIColor.red
+        scribbleView.color = UIColor(colorLiteralRed: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 1.0)
         scribbleView.backgroundColor = .clear
         scribbleView.setBrush(5.0, alpha: 0.8)
         scribbleView.delegate = self

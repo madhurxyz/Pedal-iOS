@@ -57,7 +57,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="ULZ-6v-KOd" kind="show" id="j98-tn-PRi"/>
@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="103" id="RxZ-rn-0DI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="75"/>
-                                <color key="textColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEq-7D-5kn">
@@ -161,7 +161,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="ULZ-6v-KOd" eventType="touchUpInside" id="xCk-Xv-J2h"/>
@@ -215,7 +215,7 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-CW-wya">
                                 <rect key="frame" x="63" y="280" width="248" height="31"/>
-                                <color key="tintColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="59Q-N4-99G"/>
                                     <constraint firstAttribute="width" constant="244" id="dCf-TB-qrG"/>
@@ -231,7 +231,7 @@
                                     <constraint firstAttribute="width" constant="146" id="uEV-Yf-knP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="75"/>
-                                <color key="textColor" red="0.94509803921568625" green="0.35294117647058798" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IW-wJ-PFn">
@@ -242,7 +242,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="ZHH-Tz-JaQ" eventType="touchUpInside" id="SCg-Lc-Lex"/>
@@ -254,12 +254,12 @@
                                     <constraint firstAttribute="width" constant="68" id="QW2-9S-RmS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="43"/>
-                                <color key="textColor" red="0.94567953020134232" green="0.35402684563758391" blue="0.35845557115221982" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFF-eK-O1l">
                                 <rect key="frame" x="116" y="107" width="141" height="37"/>
-                                <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="Odh-dg-KOo"/>
                                     <constraint firstAttribute="height" constant="37" id="uxO-F8-NcC"/>
@@ -316,7 +316,7 @@
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3bC-fH-zOc">
                                 <rect key="frame" x="63" y="200" width="248" height="31"/>
-                                <color key="tintColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="244" id="aex-Mz-VTM"/>
                                     <constraint firstAttribute="height" constant="30" id="pZa-ON-q2X"/>
@@ -332,7 +332,7 @@
                                     <constraint firstAttribute="height" constant="103" id="fcB-16-8GP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="75"/>
-                                <color key="textColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How strong did your pulse feel?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQf-LT-SUJ">
@@ -353,7 +353,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="9aY-Y9-xde" eventType="touchUpInside" id="tzS-zJ-wHL"/>
@@ -395,6 +395,6 @@
         <image name="pulseCheck.jpg" width="913" height="689"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dhQ-YD-Zdi"/>
+        <segue reference="V1i-PK-HZA"/>
     </inferredMetricsTieBreakers>
 </document>

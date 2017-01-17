@@ -44,7 +44,7 @@ class LowSenseViewController: UIViewController, SmoothViewDelegate {
         super.viewDidLoad()
         self.storage = self.navigationController as? StorageController
         scribbleView.backgroundColor = .clear
-        scribbleView.color = UIColor.blue
+        scribbleView.color = UIColor(colorLiteralRed: 61.0/255.0, green: 191.0/255.0, blue: 184.0/255.0, alpha: 1.0)
         scribbleView.setBrush(5.0, alpha: 0.8)
         scribbleView.delegate = self
         if !storage!.didCheckLeft{
