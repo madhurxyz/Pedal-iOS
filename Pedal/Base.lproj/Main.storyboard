@@ -43,7 +43,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vke-xz-eVn">
                                 <rect key="frame" x="31" y="589" width="313" height="58"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="gnF-50-yj2"/>
                                 </constraints>
@@ -133,7 +133,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgl-CL-HmF">
                                 <rect key="frame" x="31" y="589" width="313" height="58"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="7iP-VM-ppb"/>
                                 </constraints>
@@ -146,12 +146,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-VV-h3S">
-                                <rect key="frame" x="327" y="28" width="32" height="31"/>
+                                <rect key="frame" x="327" y="28" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="N2U-RS-NSw"/>
-                                    <constraint firstAttribute="height" constant="31" id="v4N-95-XYH"/>
+                                    <constraint firstAttribute="height" constant="32" id="v4N-95-XYH"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="cogs.png"/>
+                                <state key="normal" title="Button" image="cogs2.png"/>
                                 <connections>
                                     <action selector="settingsButton:" destination="Yng-XF-vUY" eventType="touchUpInside" id="LoP-3E-rbn"/>
                                 </connections>
@@ -200,7 +200,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-KG-5vz">
                                 <rect key="frame" x="31" y="523" width="313" height="58"/>
-                                <color key="backgroundColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="gYD-D1-sfO"/>
                                 </constraints>
@@ -219,7 +219,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <state key="normal" title="Records">
-                                    <color key="titleColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="recordsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKa-v7-BmJ"/>
@@ -258,16 +258,16 @@
                                     <constraint firstAttribute="height" constant="34" id="naE-fq-nAl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
-                                <color key="textColor" red="0.94509803921568625" green="0.3529411764705882" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka4-B1-gUP">
-                                <rect key="frame" x="327" y="28" width="32" height="31"/>
+                                <rect key="frame" x="327" y="28" width="32" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="5Vb-l8-Q7T"/>
+                                    <constraint firstAttribute="height" constant="32" id="5Vb-l8-Q7T"/>
                                     <constraint firstAttribute="width" constant="32" id="aGm-4q-8LW"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="cogs.png"/>
+                                <state key="normal" title="Button" image="cogs2.png"/>
                                 <connections>
                                     <segue destination="som-sB-BxZ" kind="show" identifier="settingsFromMain" id="ucn-qv-U2z"/>
                                 </connections>
@@ -499,7 +499,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" cyan="0.0" magenta="0.80249999999999999" yellow="0.60209999999999997" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="lgN-ds-Msw" firstAttribute="top" secondItem="GXe-ew-V6p" secondAttribute="top" constant="22" id="1q5-zT-NbM"/>
                                     <constraint firstItem="lgN-ds-Msw" firstAttribute="centerX" secondItem="GXe-ew-V6p" secondAttribute="centerX" id="Chq-Yp-yfy"/>
@@ -537,7 +537,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5e-9a-9BU">
                                 <rect key="frame" x="31" y="589" width="313" height="58"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.10588235294117647" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="cWk-wN-KCK"/>
                                 </constraints>
@@ -591,7 +591,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12J-Nh-1iT" customClass="StorageController" customModule="Pedal" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2Jy-jn-qMf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="2Jy-jn-qMf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -641,7 +641,7 @@
     </scenes>
     <resources>
         <image name="close.png" width="120" height="120"/>
-        <image name="cogs.png" width="154" height="141"/>
+        <image name="cogs2.png" width="276" height="276"/>
         <image name="leftFoot.png" width="384" height="688"/>
         <image name="rightFoot.png" width="384" height="688"/>
     </resources>

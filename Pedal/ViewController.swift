@@ -120,7 +120,7 @@ class ViewController: UIViewController {
         recordsButton.backgroundColor = .clear
         recordsButton.layer.cornerRadius = 10
         recordsButton.layer.borderWidth = 1.5
-        recordsButton.layer.borderColor = UIColor(red: 241.0/255.0, green: 90.0/255.0, blue: 91.0/255.0, alpha: 0.8).cgColor
+        recordsButton.layer.borderColor = UIColor(red: 236.0/255.0, green: 27.0/255.0, blue: 82.0/255.0, alpha: 0.8).cgColor
     }
     
     func setup(){

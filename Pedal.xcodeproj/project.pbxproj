@@ -70,6 +70,7 @@
 		E085B0281E2DE1F90087AAE9 /* sensitivity.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B0201E2DE1F90087AAE9 /* sensitivity.png */; };
 		E085B0291E2DE1F90087AAE9 /* standing.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B0211E2DE1F90087AAE9 /* standing.png */; };
 		E085B02B1E2E17530087AAE9 /* legend.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B02A1E2E17530087AAE9 /* legend.png */; };
+		E085B02D1E2E26D30087AAE9 /* cogs2.png in Resources */ = {isa = PBXBuildFile; fileRef = E085B02C1E2E26D30087AAE9 /* cogs2.png */; };
 		E0A3EC711E012BF1003D981B /* LeftFootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */; };
 		E0A3EC741E012D8D003D981B /* leftFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC721E012D8D003D981B /* leftFoot.png */; };
 		E0A3EC751E012D8D003D981B /* rightFoot.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A3EC731E012D8D003D981B /* rightFoot.png */; };
@@ -188,6 +189,7 @@
 		E085B0201E2DE1F90087AAE9 /* sensitivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sensitivity.png; sourceTree = "<group>"; };
 		E085B0211E2DE1F90087AAE9 /* standing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = standing.png; sourceTree = "<group>"; };
 		E085B02A1E2E17530087AAE9 /* legend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legend.png; sourceTree = "<group>"; };
+		E085B02C1E2E26D30087AAE9 /* cogs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cogs2.png; sourceTree = "<group>"; };
 		E0A3EC701E012BF1003D981B /* LeftFootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftFootViewController.swift; sourceTree = "<group>"; };
 		E0A3EC721E012D8D003D981B /* leftFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftFoot.png; sourceTree = "<group>"; };
 		E0A3EC731E012D8D003D981B /* rightFoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightFoot.png; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		E03A129E1DF76C9900C27298 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E085B02C1E2E26D30087AAE9 /* cogs2.png */,
 				E085B02A1E2E17530087AAE9 /* legend.png */,
 				E085B01A1E2DE1F90087AAE9 /* ankle.png */,
 				E085B01B1E2DE1F90087AAE9 /* check.png */,
@@ -597,6 +600,7 @@
 				E04740F71E29DE05002CC207 /* Sensitivity.storyboard in Resources */,
 				E0A3EC751E012D8D003D981B /* rightFoot.png in Resources */,
 				E085B0241E2DE1F90087AAE9 /* cross.png in Resources */,
+				E085B02D1E2E26D30087AAE9 /* cogs2.png in Resources */,
 				E0A3EC741E012D8D003D981B /* leftFoot.png in Resources */,
 				E04740F11E29D981002CC207 /* Pulse.storyboard in Resources */,
 				E0B52B651DFB4B2B00CCCA65 /* standingInstructions.jpg in Resources */,
