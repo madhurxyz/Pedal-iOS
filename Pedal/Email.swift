@@ -25,7 +25,7 @@ struct Email {
         
         
         self.recipient = recipient
-        self.subject = "Pedal check from \(name) on \(dateFormatter.string(from: checkup.date))"
+        self.subject = "Pedal Check from \(name) on \(dateFormatter.string(from: checkup.date))"
         
 
         
@@ -57,8 +57,8 @@ struct Email {
         let pulseStrengthLeft = checkup.left!.pulse!.strength
         let pulseStrengthRight = checkup.right!.pulse!.strength
         
-        let reportRight:String = "Left Foot: \n  Pulse: \(pulseFeltLeft) \n Beats: \(pulseBeatLeft), \n Strength\(pulseStrengthLeft) \n \n"
-        let reportLeft:String =  "Right Foot: \n  Pulse: \(pulseFeltRight) \n Beats: \(pulseBeatRight), \n Strength\(pulseStrengthRight)"
+        let reportRight:String = "Left Foot: \n Pulse: \(pulseFeltLeft) \n BPM: \(pulseBeatLeft) \n Strength: \(pulseStrengthLeft) \n \n"
+        let reportLeft:String =  "Right Foot: \n Pulse: \(pulseFeltRight) \n BPM: \(pulseBeatRight) \n Strength: \(pulseStrengthRight)"
         
         self.body = reportRight + reportLeft
     }
