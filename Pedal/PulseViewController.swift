@@ -39,6 +39,9 @@ class PulseViewController: UIViewController, LineChartDelegate {
          self.leftLineData = patient!.checkups.map{CGFloat($0.left!.pulse!.beats)}
          self.rightLineData = patient!.checkups.map{CGFloat($0.right!.pulse!.beats)}
          self.dates = patient!.checkups.map{dateFormatter.string(from: $0.date)}
+        self.leftLineData.insert(0, at: 0)
+        self.rightLineData.insert(0, at: 0)
+
         
         lineChart.addLine(leftLineData)
         lineChart.addLine(rightLineData)
