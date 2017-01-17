@@ -48,8 +48,24 @@ struct Email {
             images.append((allImages[i]!,imageNames[i]))
         }
         
-        let pulseFeltRight = checkup.left!.pulse!.felt
-        let pulseFeltLeft  = checkup.right!.pulse!.felt
+        
+        let pulseFeltLeft = checkup.left!.pulse!.felt
+        let pulseFeltRight  = checkup.right!.pulse!.felt
+        
+        var pulseLeftMessage = ""
+        var pulseRightMessage = ""
+        
+        if pulseFeltLeft == true {
+            pulseLeftMessage = "Detected"
+        } else if pulseFeltLeft == false {
+            pulseLeftMessage = "Not Detected"
+        }
+        
+        if pulseFeltRight == true {
+            pulseRightMessage = "Detected"
+        } else if pulseFeltRight == false {
+            pulseRightMessage = "Not Detected"
+        }
         
         let pulseBeatLeft = checkup.left!.pulse!.beats
         let pulseBeatRight = checkup.right!.pulse!.beats
@@ -57,10 +73,10 @@ struct Email {
         let pulseStrengthLeft = checkup.left!.pulse!.strength
         let pulseStrengthRight = checkup.right!.pulse!.strength
         
-        let reportRight:String = "Left Foot: \n Pulse: \(pulseFeltLeft) \n BPM: \(pulseBeatLeft) \n Strength: \(pulseStrengthLeft) \n \n"
-        let reportLeft:String =  "Right Foot: \n Pulse: \(pulseFeltRight) \n BPM: \(pulseBeatRight) \n Strength: \(pulseStrengthRight)"
+        let reportLeft:String = "Left Foot: \n Pulse: \(pulseLeftMessage) \n BPM: \(pulseBeatLeft) \n Strength: \(pulseStrengthLeft) \n \n"
+        let reportRight:String =  "Right Foot: \n Pulse: \(pulseRightMessage) \n BPM: \(pulseBeatRight) \n Strength: \(pulseStrengthRight)"
         
-        self.body = reportRight + reportLeft
+        self.body = reportLeft + reportRight
     }
     
     
