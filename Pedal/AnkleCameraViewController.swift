@@ -16,6 +16,7 @@ class AnkleCameraViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var instructionThreeLabel: UILabel!
     @IBOutlet weak var ankleImageView: UIImageView!
 
+    @IBOutlet weak var rotateButton: UIButton!
     @IBAction func cameraButtonPressed(_ sender: UIButton) {
         rotateImage()
     }

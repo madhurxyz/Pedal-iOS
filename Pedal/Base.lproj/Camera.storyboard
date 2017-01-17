@@ -204,6 +204,7 @@
                         <outlet property="instructionThreeLabel" destination="FNR-Nb-1Hp" id="pUL-3i-HNT"/>
                         <outlet property="instructionTwoLabel" destination="m4B-ul-zd0" id="D9S-XX-365"/>
                         <outlet property="palmImageView" destination="9Kh-Tl-xHw" id="Wl8-Gt-wbU"/>
+                        <outlet property="rotateButton" destination="s4h-Nf-RIw" id="s2A-qb-Cip"/>
                         <segue destination="Uy8-jk-dAh" kind="show" identifier="ankle" id="9vJ-fK-Qeh"/>
                     </connections>
                 </viewController>
@@ -403,6 +404,7 @@
                         <outlet property="instructionOneLabel" destination="VBJ-xw-nXs" id="gdb-fm-R3M"/>
                         <outlet property="instructionThreeLabel" destination="lJk-lA-sEE" id="Yem-Cu-UxX"/>
                         <outlet property="instructionTwoLabel" destination="Vrj-in-Kx1" id="QaX-1R-22t"/>
+                        <outlet property="rotateButton" destination="h9K-4F-wtY" id="NCO-fV-iBC"/>
                         <segue destination="GkI-OL-0Jb" kind="show" identifier="standing" id="1gV-9A-bzV"/>
                     </connections>
                 </viewController>
@@ -603,6 +605,7 @@
                         <outlet property="instructionOneLabel" destination="ehI-z1-Fop" id="xnT-Nu-h9F"/>
                         <outlet property="instructionThreeLabel" destination="lYY-yg-b1U" id="Znb-0w-sad"/>
                         <outlet property="instructionTwoLabel" destination="KXB-sx-S6l" id="H1w-it-AwS"/>
+                        <outlet property="rotateButton" destination="RGq-FD-WSh" id="vgg-aI-WvV"/>
                         <outlet property="standingImageView" destination="FOe-i0-Q8T" id="6RM-NL-fCI"/>
                         <segue destination="pzE-32-8CM" kind="show" identifier="sensitivity" id="14i-dK-Rq4"/>
                     </connections>
